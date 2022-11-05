@@ -15,14 +15,27 @@ struct StartTabView: View {
         TabView {
             EmployeeListView()
                 .tabItem {
-                    Image(systemName: "person.2.fill")
-                    Text("Two Column")
+                    Image(systemName: "person.fill.questionmark")
+                    Text("Insights")
                 }
             CompaniesListView()
                 .tabItem {
-                    Image(systemName: "person.3.fill")
-                    Text("Three Column")
+                    Image(systemName: "list.clipboard.fill")
+                    Text("Health Data")
                 }
+            
+            CompaniesListView()
+                .tabItem {
+                    Image(systemName: "cross.case.fill")
+                    Text("Health Data")
+                }
+            
+            CompaniesListView()
+                .tabItem {
+                    Image(systemName: "questionmark.circle.fill")
+                    Text("Help")
+                }
+            
         }
     }
 }
