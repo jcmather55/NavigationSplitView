@@ -20,7 +20,7 @@ struct CompaniesListView: View {
                 Text(company.name)
                     .font(.title)
             }
-            .navigationTitle("Companies")
+            .navigationTitle("Insights")
         } content: {
             if companyId == nil {
                 VStack {

@@ -16,12 +16,12 @@ struct StartTabView: View {
             EmployeeListView()
                 .tabItem {
                     Image(systemName: "person.2.fill")
-                    Text("Employees")
+                    Text("Two Column")
                 }
             CompaniesListView()
                 .tabItem {
-                    Image(systemName: "briefcase")
-                    Text("Companies")
+                    Image(systemName: "person.3.fill")
+                    Text("Three Column")
                 }
         }
     }
