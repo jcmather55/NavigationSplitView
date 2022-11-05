@@ -17,17 +17,21 @@ struct CompaniesListView: View {
     var body: some View {
         NavigationSplitView(columnVisibility: $columnVisibility) {
             List(store.companies, selection: $companyId) { company in
-                Text(company.name)
-                    .font(.title)
+                GroupBox {
+                    Text(company.name)
+                        .font(.headline)
+                        .fontWeight(.bold)
+                    Text("Second Line")
+                }
             }
-            .navigationTitle("Insights")
+            .navigationTitle("My Family")
         } content: {
             if companyId == nil {
                 VStack {
                     Image("company")
                         .resizable()
                         .scaledToFit()
-                    Text("Select Company")
+                    Text("Select Family Member")
                         .font(.title)
                 }
                 .padding()
@@ -37,7 +41,7 @@ struct CompaniesListView: View {
                         Text(employee.fullName)
                             .font(.title)
                     }
-                    .navigationTitle("Employees")
+                    .navigationTitle("Health Insights")
                 }
             }
         } detail: {

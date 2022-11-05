@@ -50,7 +50,7 @@ struct EmployeeView: View {
                     .resizable()
                     .scaledToFit()
                     .frame(width: 300)
-                Text("Select employee")
+                Text("Select Health Insight")
                     .font(.title)
             }
         }
