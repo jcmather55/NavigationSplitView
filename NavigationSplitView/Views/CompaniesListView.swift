@@ -15,13 +15,42 @@ struct CompaniesListView: View {
     @State private var employeeId: Employee.ID?
     @State private var columnVisibility: NavigationSplitViewVisibility = .all
     var body: some View {
+        
         NavigationSplitView(columnVisibility: $columnVisibility) {
+            let appVersion = Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString") as? String ?? "-"
+            
+            let appName = Bundle.main.object(forInfoDictionaryKey: "CFBundleName") as? String ?? "--"
+        
+            HStack {
+                Text("\(appName)  \(appVersion)")
+                    .font(.caption2)
+                    .fontWeight(.light)
+                    .italic()
+   
+//                Text("Version: \(appVersion)")
+//                    .font(.caption2)
+//                    .fontWeight(.light)
+//                    .italic()
+            }
+
+
+                
             List(store.companies, selection: $companyId) { company in
-                GroupBox {
-                    Text(company.name)
-                        .font(.headline)
-                        .fontWeight(.bold)
-                    Text("Second Line")
+                ScrollView{
+                    GroupBox {
+                        HStack {
+                            Image(systemName: "person.crop.circle")
+                                .font(.largeTitle)
+                            
+                            VStack (alignment: .leading) {
+                                Text(company.name)
+                                    .font(.headline)
+                                    .fontWeight(.bold)
+                                Text("Second Line")
+                                    .font(.caption)
+                            }
+                        }
+                    }
                 }
             }
             .navigationTitle("My Family")
@@ -31,6 +60,7 @@ struct CompaniesListView: View {
                     Image("company")
                         .resizable()
                         .scaledToFit()
+                        .padding(40)
                     Text("Select Family Member")
                         .font(.title)
                 }
