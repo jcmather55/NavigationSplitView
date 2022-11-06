@@ -43,7 +43,7 @@ struct CompaniesListView: View {
                                 Text(company.name)
                                     .font(.headline)
                                     .fontWeight(.bold)
-                                Text("Second Line")
+                                Text("Family Member Profile")
                                     .font(.caption)
                             }
                         }
@@ -51,6 +51,7 @@ struct CompaniesListView: View {
                     }
             }
             .navigationTitle("My Family")
+            
         } content: {
             if companyId == nil {
                 VStack {
@@ -75,7 +76,7 @@ struct CompaniesListView: View {
                                 Text(company.name)
                                     .font(.headline)
                                     .fontWeight(.bold)
-                                Text("Insights")
+                                Text("All Insights")
                                     .font(.caption)
                             }
                             Spacer()
