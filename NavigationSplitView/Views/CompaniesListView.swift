@@ -41,7 +41,7 @@ struct CompaniesListView: View {
                         Text(employee.fullName)
                             .font(.title)
                     }
-                    .navigationTitle("Health Insights")
+                    .navigationTitle(company.name)
                 }
             }
         } detail: {
