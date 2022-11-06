@@ -16,10 +16,25 @@ struct EmployeeView: View {
         if let employeeId {
             if let employee = store.employee(id: employeeId) {
                 VStack {
-                    Text(employee.company.name)
-                        .font(.largeTitle)
-                    Text(employee.fullName)
-                        .font(.title)
+                    
+                    GroupBox {
+                        HStack {
+                            Image(systemName: "person.crop.circle")
+                                .font(.largeTitle)
+                            VStack (alignment: .leading) {
+                                Text(employee.company.name)
+                                    .font(.headline)
+                                    .fontWeight(.bold)
+                                Text("Insight Detail")
+                                    .font(.caption)
+                            }
+                            Spacer()
+                        }
+                    }
+                    
+                    Spacer()
+                    Text("Insight: " + employee.fullName)
+                        .font(.title) .bold()
                     Text("\"" + employee.slogan + "\"")
                         .font(.largeTitle)
                         .fontWeight(.thin)
@@ -33,7 +48,7 @@ struct EmployeeView: View {
                                 .gridColumnAlignment(.leading)
                         }
                         GridRow(alignment: .top) {
-                            Text("Title").bold()
+                            Text("Title:").bold()
                             Text(employee.title)
                         }
                     }

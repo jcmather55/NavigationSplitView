@@ -35,8 +35,10 @@ struct StartTabView: View {
                     Image(systemName: "calendar.circle.fill")
                     Text("Appointments")
                 }
+        
             
         }
+
     }
 }
 

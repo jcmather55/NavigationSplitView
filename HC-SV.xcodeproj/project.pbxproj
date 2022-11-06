@@ -32,7 +32,7 @@
 		BB5988F728A37D4F006A1614 /* MOCK_DATA.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MOCK_DATA.json; sourceTree = "<group>"; };
 		BB80BDBF28A2E1490096746A /* StartTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartTabView.swift; sourceTree = "<group>"; };
 		BB80BDC128A2E7390096746A /* EmployeeListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeListView.swift; sourceTree = "<group>"; };
-		BBAD59A4288BAFB700FB853D /* NavigationSplitView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NavigationSplitView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BBAD59A4288BAFB700FB853D /* HC-SV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HC-SV.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBAD59A7288BAFB700FB853D /* AppEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppEntry.swift; sourceTree = "<group>"; };
 		BBAD59A9288BAFB700FB853D /* CompaniesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompaniesListView.swift; sourceTree = "<group>"; };
 		BBAD59AB288BAFB800FB853D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -76,7 +76,7 @@
 		BBAD59A5288BAFB700FB853D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				BBAD59A4288BAFB700FB853D /* NavigationSplitView.app */,
+				BBAD59A4288BAFB700FB853D /* HC-SV.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -130,9 +130,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		BBAD59A3288BAFB700FB853D /* NavigationSplitView */ = {
+		BBAD59A3288BAFB700FB853D /* HC-SV */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BBAD59B2288BAFB800FB853D /* Build configuration list for PBXNativeTarget "NavigationSplitView" */;
+			buildConfigurationList = BBAD59B2288BAFB800FB853D /* Build configuration list for PBXNativeTarget "HC-SV" */;
 			buildPhases = (
 				BBAD59A0288BAFB700FB853D /* Sources */,
 				BBAD59A1288BAFB700FB853D /* Frameworks */,
@@ -142,9 +142,9 @@
 			);
 			dependencies = (
 			);
-			name = NavigationSplitView;
+			name = "HC-SV";
 			productName = ThreeColNav;
-			productReference = BBAD59A4288BAFB700FB853D /* NavigationSplitView.app */;
+			productReference = BBAD59A4288BAFB700FB853D /* HC-SV.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -162,7 +162,7 @@
 					};
 				};
 			};
-			buildConfigurationList = BBAD599F288BAFB700FB853D /* Build configuration list for PBXProject "NavigationSplitView" */;
+			buildConfigurationList = BBAD599F288BAFB700FB853D /* Build configuration list for PBXProject "HC-SV" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -175,7 +175,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				BBAD59A3288BAFB700FB853D /* NavigationSplitView */,
+				BBAD59A3288BAFB700FB853D /* HC-SV */,
 			);
 		};
 /* End PBXProject section */
@@ -398,7 +398,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		BBAD599F288BAFB700FB853D /* Build configuration list for PBXProject "NavigationSplitView" */ = {
+		BBAD599F288BAFB700FB853D /* Build configuration list for PBXProject "HC-SV" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BBAD59B0288BAFB800FB853D /* Debug */,
@@ -407,7 +407,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BBAD59B2288BAFB800FB853D /* Build configuration list for PBXNativeTarget "NavigationSplitView" */ = {
+		BBAD59B2288BAFB800FB853D /* Build configuration list for PBXNativeTarget "HC-SV" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BBAD59B3288BAFB800FB853D /* Debug */,

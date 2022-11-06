@@ -16,27 +16,24 @@ struct CompaniesListView: View {
     @State private var columnVisibility: NavigationSplitViewVisibility = .all
     var body: some View {
         
-        NavigationSplitView(columnVisibility: $columnVisibility) {
+ 
             let appVersion = Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString") as? String ?? "-"
             
             let appName = Bundle.main.object(forInfoDictionaryKey: "CFBundleName") as? String ?? "--"
-        
+
+        NavigationSplitView(columnVisibility: $columnVisibility) {
+
             HStack {
                 Text("\(appName)  \(appVersion)")
                     .font(.caption2)
                     .fontWeight(.light)
                     .italic()
-   
-//                Text("Version: \(appVersion)")
-//                    .font(.caption2)
-//                    .fontWeight(.light)
-//                    .italic()
             }
 
 
                 
             List(store.companies, selection: $companyId) { company in
-                ScrollView{
+
                     GroupBox {
                         HStack {
                             Image(systemName: "person.crop.circle")
@@ -50,8 +47,8 @@ struct CompaniesListView: View {
                                     .font(.caption)
                             }
                         }
+
                     }
-                }
             }
             .navigationTitle("My Family")
         } content: {
@@ -67,11 +64,29 @@ struct CompaniesListView: View {
                 .padding()
             } else {
                 if let company = store.company(id: companyId!) {
+     
+                    GroupBox {
+
+                        HStack {
+ 
+                            Image(systemName: "person.crop.circle")
+                                .font(.largeTitle)
+                            VStack (alignment: .leading) {
+                                Text(company.name)
+                                    .font(.headline)
+                                    .fontWeight(.bold)
+                                Text("Insights")
+                                    .font(.caption)
+                            }
+                            Spacer()
+                        }
+                   
+                    }
                     List(company.employees, selection: $employeeId) { employee in
                         Text(employee.fullName)
                             .font(.title)
                     }
-                    .navigationTitle(company.name)
+//                    .navigationTitle("Insights")
                 }
             }
         } detail: {
@@ -85,7 +100,7 @@ struct CompaniesListView: View {
             if employeeId == nil {
                 columnVisibility = .all
             } else {
-                columnVisibility = .doubleColumn
+                columnVisibility = .detailOnly
             }
         }
     }

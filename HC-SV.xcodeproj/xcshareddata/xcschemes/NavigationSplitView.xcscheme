@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "BBAD59A3288BAFB700FB853D"
-               BuildableName = "NavigationSplitView.app"
-               BlueprintName = "NavigationSplitView"
-               ReferencedContainer = "container:NavigationSplitView.xcodeproj">
+               BuildableName = "HC-SV.app"
+               BlueprintName = "HC-SV"
+               ReferencedContainer = "container:HC-SV.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -45,9 +45,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "BBAD59A3288BAFB700FB853D"
-            BuildableName = "NavigationSplitView.app"
-            BlueprintName = "NavigationSplitView"
-            ReferencedContainer = "container:NavigationSplitView.xcodeproj">
+            BuildableName = "HC-SV.app"
+            BlueprintName = "HC-SV"
+            ReferencedContainer = "container:HC-SV.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -62,9 +62,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "BBAD59A3288BAFB700FB853D"
-            BuildableName = "NavigationSplitView.app"
-            BlueprintName = "NavigationSplitView"
-            ReferencedContainer = "container:NavigationSplitView.xcodeproj">
+            BuildableName = "HC-SV.app"
+            BlueprintName = "HC-SV"
+            ReferencedContainer = "container:HC-SV.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
