@@ -19,7 +19,7 @@ struct EmployeeListView: View {
                     .font(.title)
             }
             .searchable(text: $store.employeeFilter)
-            .navigationTitle("Insights")
+            .navigationTitle("Details")
         } detail: {
             EmployeeView(employeeId: employeeId)
         }

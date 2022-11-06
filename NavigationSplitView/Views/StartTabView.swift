@@ -13,27 +13,27 @@ struct StartTabView: View {
     @EnvironmentObject var store: DataStore
     var body: some View {
         TabView {
-            EmployeeListView()
+            CompaniesListView()
                 .tabItem {
                     Image(systemName: "person.fill.questionmark")
                     Text("Insights")
                 }
-            CompaniesListView()
+            EmployeeListView()
                 .tabItem {
                     Image(systemName: "list.clipboard.fill")
-                    Text("Health Data")
+                    Text("Details")
                 }
             
-            CompaniesListView()
+            MedicalKit()
                 .tabItem {
                     Image(systemName: "cross.case.fill")
-                    Text("Health Data")
+                    Text("Medical Kit")
                 }
             
-            CompaniesListView()
+            Appointments()
                 .tabItem {
-                    Image(systemName: "questionmark.circle.fill")
-                    Text("Help")
+                    Image(systemName: "calendar.circle.fill")
+                    Text("Appointments")
                 }
             
         }
