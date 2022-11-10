@@ -9,7 +9,7 @@
 
 import SwiftUI
 
-struct EmployeeView: View {
+struct EmployeeDetailView: View {
     @EnvironmentObject var store: DataStore
     var employeeId: Employee.ID?
     var body: some View {
@@ -74,7 +74,7 @@ struct EmployeeView: View {
 
 struct EmployeeView_Previews: PreviewProvider {
     static var previews: some View {
-        EmployeeView(employeeId: "92c08f4a-d5bf-49e4-809f-7aefaa155c16")
+        EmployeeDetailView(employeeId: "92c08f4a-d5bf-49e4-809f-7aefaa155c16")
             .environmentObject(DataStore())
     }
 }

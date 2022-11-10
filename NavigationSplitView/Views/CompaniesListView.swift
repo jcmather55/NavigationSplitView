@@ -91,7 +91,7 @@ struct CompaniesListView: View {
                 }
             }
         } detail: {
-            EmployeeView(employeeId: employeeId)
+            EmployeeDetailView(employeeId: employeeId)
         }
         .navigationSplitViewStyle(.balanced)
         .onChange(of: companyId) { _ in
