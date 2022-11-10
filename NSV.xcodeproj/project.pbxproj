@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		792C892D291D4B70009E503A /* EmployeeListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792C892C291D4B70009E503A /* EmployeeListView.swift */; };
+		792C892D291D4B70009E503A /* EmployeeContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792C892C291D4B70009E503A /* EmployeeContentView.swift */; };
 		79B07158291683EF005FEE34 /* MedicalKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B07157291683EF005FEE34 /* MedicalKit.swift */; };
 		79B0715A29168719005FEE34 /* Appointments.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B0715929168719005FEE34 /* Appointments.swift */; };
 		BB06EC6328C5536F00BFFFD9 /* EmployeeDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB06EC6228C5536F00BFFFD9 /* EmployeeDetailView.swift */; };
@@ -26,7 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		792C892C291D4B70009E503A /* EmployeeListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeListView.swift; sourceTree = "<group>"; };
+		792C892C291D4B70009E503A /* EmployeeContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeContentView.swift; sourceTree = "<group>"; };
 		79B07157291683EF005FEE34 /* MedicalKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicalKit.swift; sourceTree = "<group>"; };
 		79B0715929168719005FEE34 /* Appointments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Appointments.swift; sourceTree = "<group>"; };
 		BB06EC6228C5536F00BFFFD9 /* EmployeeDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeDetailView.swift; sourceTree = "<group>"; };
@@ -119,7 +119,7 @@
 			children = (
 				BB80BDBF28A2E1490096746A /* StartTabView.swift */,
 				BBAD59A9288BAFB700FB853D /* CompaniesListView.swift */,
-				792C892C291D4B70009E503A /* EmployeeListView.swift */,
+				792C892C291D4B70009E503A /* EmployeeContentView.swift */,
 				BB06EC6228C5536F00BFFFD9 /* EmployeeDetailView.swift */,
 				79B07157291683EF005FEE34 /* MedicalKit.swift */,
 				79B0715929168719005FEE34 /* Appointments.swift */,
@@ -207,7 +207,7 @@
 				BBAD59C0288BB08600FB853D /* Employee.swift in Sources */,
 				BB80BDC028A2E1490096746A /* StartTabView.swift in Sources */,
 				BBAD59A8288BAFB700FB853D /* AppEntry.swift in Sources */,
-				792C892D291D4B70009E503A /* EmployeeListView.swift in Sources */,
+				792C892D291D4B70009E503A /* EmployeeContentView.swift in Sources */,
 				BBAD59BE288BB05500FB853D /* Company.swift in Sources */,
 				79B07158291683EF005FEE34 /* MedicalKit.swift in Sources */,
 				79B0715A29168719005FEE34 /* Appointments.swift in Sources */,
