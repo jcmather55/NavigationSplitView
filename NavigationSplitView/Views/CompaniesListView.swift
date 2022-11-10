@@ -21,38 +21,44 @@ struct CompaniesListView: View {
             
             let appName = Bundle.main.object(forInfoDictionaryKey: "CFBundleName") as? String ?? "--"
 
-        NavigationSplitView(columnVisibility: $columnVisibility) {
+//  Mark: - Start of Navigation Split View
+        
+NavigationSplitView(columnVisibility: $columnVisibility) {
+    
+    HStack {
+        Text("\(appName)  \(appVersion)")
+            .font(.caption2)
+            .fontWeight(.light)
+            .italic()
+    }
 
-            HStack {
-                Text("\(appName)  \(appVersion)")
-                    .font(.caption2)
-                    .fontWeight(.light)
-                    .italic()
-            }
-
-
-                
-            List(store.companies, selection: $companyId) { company in
-
-                    GroupBox {
-                        HStack {
-                            Image(systemName: "person.crop.circle")
-                                .font(.largeTitle)
-                            
-                            VStack (alignment: .leading) {
-                                Text(company.name)
-                                    .font(.headline)
-                                    .fontWeight(.bold)
-                                Text("Family Member Profile")
-                                    .font(.caption)
-                            }
-                        }
-
-                    }
-            }
-            .navigationTitle("My Family")
+// NSV Part 1 - "Company List"
             
-        } content: {
+    List(store.companies, selection: $companyId) { company in
+        
+        GroupBox {
+            HStack {
+                Image(systemName: "person.crop.circle")
+                    .font(.largeTitle)
+                
+                VStack (alignment: .leading) {
+                    Text(company.name)
+                        .font(.headline)
+                        .fontWeight(.bold)
+                    Text("Family Member Profile")
+                        .font(.caption)
+                }
+            }
+            
+        }
+    }
+    .navigationTitle("My Family")
+    
+}
+
+// NSV - Part 2 - "EmployeeContentView"
+    
+    content: {
             if companyId == nil {
                 VStack {
                     Image("company")
@@ -90,20 +96,22 @@ struct CompaniesListView: View {
                     .navigationTitle("Insights")
                 }
             }
-        } detail: {
-            EmployeeDetailView(employeeId: employeeId)
         }
-        .navigationSplitViewStyle(.balanced)
-        .onChange(of: companyId) { _ in
-            employeeId = nil
+    
+// NSV - Part 3 "EmployeeDetailView
+        
+    detail: {
+        EmployeeDetailView(employeeId: employeeId)
+    }
+    .navigationSplitViewStyle(.balanced)
+    .onChange(of: companyId) { _ in employeeId = nil}
+    .onChange(of: employeeId) { _ in
+        if employeeId == nil {
+            columnVisibility = .all
+        } else {
+            columnVisibility = .detailOnly
         }
-        .onChange(of: employeeId) { _ in
-            if employeeId == nil {
-                columnVisibility = .all
-            } else {
-                columnVisibility = .detailOnly
-            }
-        }
+    }
     }
 }
 
