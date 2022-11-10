@@ -68,7 +68,7 @@
 		BBAD599B288BAFB700FB853D = {
 			isa = PBXGroup;
 			children = (
-				BBAD59A6288BAFB700FB853D /* CS-02App */,
+				BBAD59A6288BAFB700FB853D /* CS-02 */,
 				BBAD59A5288BAFB700FB853D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -81,7 +81,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		BBAD59A6288BAFB700FB853D /* CS-02App */ = {
+		BBAD59A6288BAFB700FB853D /* CS-02 */ = {
 			isa = PBXGroup;
 			children = (
 				BBAD59A7288BAFB700FB853D /* AppEntry.swift */,
@@ -94,7 +94,7 @@
 				BBC6DA4A288C5FA1004C0AF6 /* Launch Screen.storyboard */,
 				BBAD59AD288BAFB800FB853D /* Preview Content */,
 			);
-			path = "CS-02App";
+			path = "CS-02";
 			sourceTree = "<group>";
 		};
 		BBAD59AD288BAFB800FB853D /* Preview Content */ = {
@@ -338,7 +338,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"NavigationSplitView/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"CS-02App\"";
 				DEVELOPMENT_TEAM = J9PF4W2Z3N;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -355,7 +355,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = "2022-11-10a";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.CMTLS.CS-02.10b";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.CMTLS.CS-02.10a";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -370,7 +370,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"NavigationSplitView/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"CS-02App\"";
 				DEVELOPMENT_TEAM = J9PF4W2Z3N;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -387,7 +387,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = "2022-11-10a";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.CMTLS.CS-02.10b";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.CMTLS.CS-02.10a";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
