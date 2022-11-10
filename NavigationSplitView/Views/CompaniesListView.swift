@@ -87,7 +87,7 @@ struct CompaniesListView: View {
                         Text(employee.fullName)
                             .font(.title)
                     }
-//                    .navigationTitle("Insights")
+                    .navigationTitle("Insights")
                 }
             }
         } detail: {
