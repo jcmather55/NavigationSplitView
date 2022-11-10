@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "BBAD59A3288BAFB700FB853D"
-               BuildableName = "NSV.app"
-               BlueprintName = "NSV"
-               ReferencedContainer = "container:NSV.xcodeproj">
+               BuildableName = "CS-02.app"
+               BlueprintName = "CS-02"
+               ReferencedContainer = "container:CS-02.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -45,9 +45,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "BBAD59A3288BAFB700FB853D"
-            BuildableName = "NSV.app"
-            BlueprintName = "NSV"
-            ReferencedContainer = "container:NSV.xcodeproj">
+            BuildableName = "CS-02.app"
+            BlueprintName = "CS-02"
+            ReferencedContainer = "container:CS-02.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -62,9 +62,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "BBAD59A3288BAFB700FB853D"
-            BuildableName = "NSV.app"
-            BlueprintName = "NSV"
-            ReferencedContainer = "container:NSV.xcodeproj">
+            BuildableName = "CS-02.app"
+            BlueprintName = "CS-02"
+            ReferencedContainer = "container:CS-02.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
