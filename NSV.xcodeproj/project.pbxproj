@@ -12,7 +12,6 @@
 		BB06EC6328C5536F00BFFFD9 /* EmployeeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB06EC6228C5536F00BFFFD9 /* EmployeeView.swift */; };
 		BB5988F828A37D4F006A1614 /* MOCK_DATA.json in Resources */ = {isa = PBXBuildFile; fileRef = BB5988F728A37D4F006A1614 /* MOCK_DATA.json */; };
 		BB80BDC028A2E1490096746A /* StartTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB80BDBF28A2E1490096746A /* StartTabView.swift */; };
-		BB80BDC228A2E7390096746A /* EmployeeListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB80BDC128A2E7390096746A /* EmployeeListView.swift */; };
 		BBAD59A8288BAFB700FB853D /* AppEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBAD59A7288BAFB700FB853D /* AppEntry.swift */; };
 		BBAD59AA288BAFB700FB853D /* CompaniesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBAD59A9288BAFB700FB853D /* CompaniesListView.swift */; };
 		BBAD59AC288BAFB800FB853D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BBAD59AB288BAFB800FB853D /* Assets.xcassets */; };
@@ -31,7 +30,6 @@
 		BB06EC6228C5536F00BFFFD9 /* EmployeeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeView.swift; sourceTree = "<group>"; };
 		BB5988F728A37D4F006A1614 /* MOCK_DATA.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MOCK_DATA.json; sourceTree = "<group>"; };
 		BB80BDBF28A2E1490096746A /* StartTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartTabView.swift; sourceTree = "<group>"; };
-		BB80BDC128A2E7390096746A /* EmployeeListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeListView.swift; sourceTree = "<group>"; };
 		BBAD59A4288BAFB700FB853D /* NSV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NSV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBAD59A7288BAFB700FB853D /* AppEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppEntry.swift; sourceTree = "<group>"; };
 		BBAD59A9288BAFB700FB853D /* CompaniesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompaniesListView.swift; sourceTree = "<group>"; };
@@ -118,7 +116,6 @@
 			isa = PBXGroup;
 			children = (
 				BB80BDBF28A2E1490096746A /* StartTabView.swift */,
-				BB80BDC128A2E7390096746A /* EmployeeListView.swift */,
 				BBAD59A9288BAFB700FB853D /* CompaniesListView.swift */,
 				BB06EC6228C5536F00BFFFD9 /* EmployeeView.swift */,
 				79B07157291683EF005FEE34 /* MedicalKit.swift */,
@@ -204,7 +201,6 @@
 				BBAD59C2288BB12A00FB853D /* DataStore.swift in Sources */,
 				BBAD59BC288BB02D00FB853D /* Bundle+Extension.swift in Sources */,
 				BBAD59AA288BAFB700FB853D /* CompaniesListView.swift in Sources */,
-				BB80BDC228A2E7390096746A /* EmployeeListView.swift in Sources */,
 				BBAD59C0288BB08600FB853D /* Employee.swift in Sources */,
 				BB80BDC028A2E1490096746A /* StartTabView.swift in Sources */,
 				BBAD59A8288BAFB700FB853D /* AppEntry.swift in Sources */,

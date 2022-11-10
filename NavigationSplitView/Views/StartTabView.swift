@@ -18,11 +18,11 @@ struct StartTabView: View {
                     Image(systemName: "person.fill.questionmark")
                     Text("Insights")
                 }
-            EmployeeListView()
-                .tabItem {
-                    Image(systemName: "list.clipboard.fill")
-                    Text("Details")
-                }
+//            EmployeeListView()
+//                .tabItem {
+//                    Image(systemName: "list.clipboard.fill")
+//                    Text("Details")
+//               }
             
             MedicalKit()
                 .tabItem {
