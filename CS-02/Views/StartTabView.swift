@@ -16,7 +16,7 @@ struct StartTabView: View {
             CompaniesListView()
                 .tabItem {
                     Image(systemName: "person.fill.questionmark")
-                    Text("Insights")
+                    Text("Patient Panel")
                 }
 //            EmployeeListView()
 //                .tabItem {

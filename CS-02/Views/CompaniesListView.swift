@@ -19,9 +19,8 @@ struct CompaniesListView: View {
     
     var body: some View {
     
-            let appVersion = Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString") as? String ?? "-"
-            
-            let appName = Bundle.main.object(forInfoDictionaryKey: "CFBundleName") as? String ?? "--"
+    let appVersion = Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString") as? String ?? "-"
+    let appName = Bundle.main.object(forInfoDictionaryKey: "CFBundleName") as? String ?? "--"
 
 //  Mark: - Start of Navigation Split View
         
@@ -38,23 +37,27 @@ NavigationSplitView(columnVisibility: $columnVisibility) {
             
     List(store.companies, selection: $companyId) { company in
         
-        GroupBox {
-            HStack {
-                Image(systemName: "person.crop.circle")
-                    .font(.largeTitle)
+
+        HStack {
+            Image(systemName: "person.crop.circle")
+                .font(.largeTitle)
+            
+            VStack (alignment: .leading) {
+                Text(company.name)
+                    .font(.headline)
+                    .fontWeight(.bold)
                 
-                VStack (alignment: .leading) {
-                    Text(company.name)
-                        .font(.headline)
-                        .fontWeight(.bold)
-                    Text("Family Member Profile")
-                        .font(.caption)
-                }
+                Text("Profile, Summary")
+                    .font(.caption)
+                
+                Text("Age:   ")
+                    .font(.caption2)
+                
             }
             
         }
     }
-    .navigationTitle("My Family")
+    .navigationTitle("Patient Panel")
     
 }
 
@@ -67,7 +70,7 @@ NavigationSplitView(columnVisibility: $columnVisibility) {
                         .resizable()
                         .scaledToFit()
                         .padding(40)
-                    Text("Select Family Member")
+                    Text("Select Patient")
                         .font(.title)
                 }
                 .padding()
@@ -84,7 +87,7 @@ NavigationSplitView(columnVisibility: $columnVisibility) {
                                 Text(company.name)
                                     .font(.headline)
                                     .fontWeight(.bold)
-                                Text("All Insights")
+                                Text("Profile, Detail")
                                     .font(.caption)
                             }
                             Spacer()
@@ -95,7 +98,7 @@ NavigationSplitView(columnVisibility: $columnVisibility) {
                         Text(employee.firstName)
                             .font(.title)
                     }
-                    .navigationTitle("Insights")
+  //                  .navigationTitle("Insights")
                 }
             }
         }
@@ -107,6 +110,7 @@ NavigationSplitView(columnVisibility: $columnVisibility) {
     }
     .navigationSplitViewStyle(.balanced)
     .onChange(of: companyId) { _ in employeeId = nil}
+        
     .onChange(of: employeeId) { _ in
         if employeeId == nil {
             columnVisibility = .all
