@@ -98,7 +98,7 @@ NavigationSplitView(columnVisibility: $columnVisibility) {
                                     .fontWeight(.bold)
                                 Text("Profile")
                                     .font(.caption)
-                                Text("More Data")
+                                Text("More Data Title")
                                     .font(.largeTitle)
                             }
                             Spacer()
@@ -106,8 +106,16 @@ NavigationSplitView(columnVisibility: $columnVisibility) {
                    
                     }
                     List(company.employees, selection: $employeeId) { employee in
-                        Text(employee.firstName)
-                            .font(.title)
+   
+                        GroupBox  {
+                            VStack (alignment: .leading) {
+                                Text(employee.firstName)
+                                    .font(.largeTitle)
+                                Text("Insight Summary")
+                                    .font(.title)
+                            }
+                        }
+                        
                     }
   //                  .navigationTitle("Insights")
                 }
