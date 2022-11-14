@@ -354,7 +354,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = "2022-11-10a";
+				MARKETING_VERSION = "2022-11-14a";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.CMTLS.CS-02.10a";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -386,7 +386,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = "2022-11-10a";
+				MARKETING_VERSION = "2022-11-14a";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.CMTLS.CS-02.10a";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;

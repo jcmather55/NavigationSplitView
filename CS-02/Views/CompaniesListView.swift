@@ -13,10 +13,12 @@ struct CompaniesListView: View {
     @EnvironmentObject var store: DataStore
     @State private var companyId: Company.ID?
     @State private var employeeId: Employee.ID?
-    @State private var columnVisibility: NavigationSplitViewVisibility = .all
+    @State private var columnVisibility:
+    
+    NavigationSplitViewVisibility = .all
+    
     var body: some View {
-        
- 
+    
             let appVersion = Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString") as? String ?? "-"
             
             let appName = Bundle.main.object(forInfoDictionaryKey: "CFBundleName") as? String ?? "--"
@@ -56,7 +58,7 @@ NavigationSplitView(columnVisibility: $columnVisibility) {
     
 }
 
-// NSV - Part 2 - "EmployeeContentView"
+// NSV - Part 2a - "EmployeeListView (Embedded)"
     
     content: {
             if companyId == nil {
@@ -90,7 +92,7 @@ NavigationSplitView(columnVisibility: $columnVisibility) {
                    
                     }
                     List(company.employees, selection: $employeeId) { employee in
-                        Text(employee.fullName)
+                        Text(employee.firstName)
                             .font(.title)
                     }
                     .navigationTitle("Insights")
