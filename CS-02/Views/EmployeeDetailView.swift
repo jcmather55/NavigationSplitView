@@ -25,7 +25,7 @@ struct EmployeeDetailView: View {
                                 Text(employee.company.name)
                                     .font(.headline)
                                     .fontWeight(.bold)
-                                Text("Insight Detail")
+                                Text("Profile")
                                     .font(.caption)
                             }
                             Spacer()
@@ -65,7 +65,7 @@ struct EmployeeDetailView: View {
                     .resizable()
                     .scaledToFit()
                     .frame(width: 300)
-                Text("Select Insight Detail")
+                Text("What Condition?")
                     .font(.title)
             }
         }

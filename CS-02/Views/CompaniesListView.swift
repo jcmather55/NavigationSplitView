@@ -38,26 +38,34 @@ NavigationSplitView(columnVisibility: $columnVisibility) {
     List(store.companies, selection: $companyId) { company in
         
 
-        HStack {
+        HStack (alignment: .top) {
             Image(systemName: "person.crop.circle")
                 .font(.largeTitle)
             
-            VStack (alignment: .leading) {
-                Text(company.name)
-                    .font(.headline)
-                    .fontWeight(.bold)
-                
-                Text("Profile, Summary")
-                    .font(.caption)
-                
-                Text("Age:   ")
-                    .font(.caption2)
-                
+                VStack (alignment: .leading) {
+                    Text(company.name)
+                        .font(.headline)
+                        .fontWeight(.bold)
+                    
+                    Text("Reason for visit")
+                        .font(.caption)
+                        .padding(.bottom)
+                    
+                    GroupBox {
+                    Text("Virtual appointment - 00:00")
+                        .font(.caption2)
+                    }
             }
+            Spacer()
+            Image(systemName: "checkmark.seal.fill")
+                    .font(.largeTitle)
+                    .foregroundColor(.green)
             
         }
     }
     .navigationTitle("Patient Panel")
+
+    
     
 }
 
@@ -70,25 +78,28 @@ NavigationSplitView(columnVisibility: $columnVisibility) {
                         .resizable()
                         .scaledToFit()
                         .padding(40)
-                    Text("Select Patient")
+                    Text("What Patient?")
                         .font(.title)
                 }
                 .padding()
             } else {
                 if let company = store.company(id: companyId!) {
      
+  
+// This is the Patient Title Block for the Insignts List View
+                    
                     GroupBox {
-
                         HStack {
- 
                             Image(systemName: "person.crop.circle")
                                 .font(.largeTitle)
                             VStack (alignment: .leading) {
                                 Text(company.name)
                                     .font(.headline)
                                     .fontWeight(.bold)
-                                Text("Profile, Detail")
+                                Text("Profile")
                                     .font(.caption)
+                                Text("More Data")
+                                    .font(.largeTitle)
                             }
                             Spacer()
                         }
