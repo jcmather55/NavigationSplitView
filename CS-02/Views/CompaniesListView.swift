@@ -85,7 +85,7 @@ struct CompaniesListView: View {
                 }
             }
 
-    .navigationTitle("Patient Panel")
+    .navigationTitle("Patients")
 
     
     
@@ -160,7 +160,8 @@ struct CompaniesListView: View {
                     }
                     
                     
-  //                  .navigationTitle("Insights")
+ //                   .navigationTitle("Insights")
+
                 }
             }
         }
