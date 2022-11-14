@@ -12,32 +12,32 @@ import SwiftUI
 struct StartTabView: View {
     @EnvironmentObject var store: DataStore
     var body: some View {
-        TabView {
+//        TabView {
             CompaniesListView()
-                .tabItem {
-                    Image(systemName: "person.fill.questionmark")
-                    Text("Patient Panel")
-                }
-//            EmployeeListView()
 //                .tabItem {
-//                    Image(systemName: "list.clipboard.fill")
-//                    Text("Details")
-//               }
-            
-            MedicalKit()
-                .tabItem {
-                    Image(systemName: "cross.case.fill")
-                    Text("Medical Kit")
-                }
-            
-            Appointments()
-                .tabItem {
-                    Image(systemName: "calendar.circle.fill")
-                    Text("Appointments")
-                }
-        
-            
-        }
+//                    Image(systemName: "person.fill.questionmark")
+//                    Text("Patient Panel")
+//                }
+//           EmployeeListView()
+//               .tabItem {
+//                   Image(systemName: "list.clipboard.fill")
+//                  Text("Details")
+//             }
+//
+//            MedicalKit()
+//                .tabItem {
+//                    Image(systemName: "cross.case.fill")
+//                    Text("Medical Kit")
+//                }
+//
+//            Appointments()
+//                .tabItem {
+//                    Image(systemName: "calendar.circle.fill")
+//                    Text("Appointments")
+//                }
+//
+//
+//        }
 
     }
 }

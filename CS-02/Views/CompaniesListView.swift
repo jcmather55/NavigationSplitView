@@ -24,45 +24,67 @@ struct CompaniesListView: View {
 
 //  Mark: - Start of Navigation Split View
         
-NavigationSplitView(columnVisibility: $columnVisibility) {
-    
-    HStack {
-        Text("\(appName)  \(appVersion)")
-            .font(.caption2)
-            .fontWeight(.light)
-            .italic()
-    }
-
-// NSV Part 1 - "Company List"
+        NavigationSplitView(columnVisibility: $columnVisibility) {
             
-    List(store.companies, selection: $companyId) { company in
-        
-
-        HStack (alignment: .top) {
-            Image(systemName: "person.crop.circle")
-                .font(.largeTitle)
-            
-                VStack (alignment: .leading) {
-                    Text(company.name)
-                        .font(.headline)
-                        .fontWeight(.bold)
-                    
-                    Text("Reason for visit")
-                        .font(.caption)
-                        .padding(.bottom)
-                    
-                    GroupBox {
-                    Text("Virtual appointment - 00:00")
-                        .font(.caption2)
-                    }
+            HStack {
+                Text("\(appName)  \(appVersion)")
+                    .font(.caption2)
+                    .fontWeight(.light)
+                    .italic()
             }
-            Spacer()
-            Image(systemName: "checkmark.seal.fill")
-                    .font(.largeTitle)
-                    .foregroundColor(.green)
             
-        }
-    }
+            // NSV Part 1 - "Company List"
+            
+            List(store.companies, selection: $companyId) { company in
+                
+                
+                HStack (alignment: .top) {
+                    Image(systemName: "person.crop.circle")
+                        .font(.largeTitle)
+                    
+                    VStack (alignment: .leading) {
+                        Text(company.name)
+                            .font(.headline)
+                            .fontWeight(.bold)
+                        
+                        Text("Reason for visit")
+                            .font(.caption)
+                            .padding(.bottom)
+                        
+                        GroupBox {
+                            Text("Virtual appointment - 00:00")
+                                .font(.caption2)
+                        }
+                    }
+                    Spacer()
+                    Image(systemName: "checkmark.seal.fill")
+                        .font(.largeTitle)
+                        .foregroundColor(.green)
+                    
+                }
+            }
+ 
+// The toobar on the first "Patient Panel" list
+            
+            .toolbar {
+                
+                ToolbarItemGroup (placement: .bottomBar) {
+                    Button { } label: { Image (systemName: "square.and.arrow. up") .foregroundColor(.blue) }
+                    Button { } label: { Image (systemName: "square.and.arrow. up") .foregroundColor(.blue) }
+                }
+                ToolbarItemGroup (placement: .navigationBarTrailing) {
+                    
+                    Button { } label: { Image(systemName: "list.clipboard.fill")
+                                        Text("")}
+                    
+                    Button { } label: { Image(systemName: "cross.case.fill")
+                                        Text("")}
+                    
+                    Button { } label: { Image(systemName: "calendar.circle.fill") }
+                    
+                }
+            }
+
     .navigationTitle("Patient Panel")
 
     
@@ -117,6 +139,27 @@ NavigationSplitView(columnVisibility: $columnVisibility) {
                         }
                         
                     }
+
+                    .toolbar {
+                        
+                        ToolbarItemGroup (placement: .bottomBar) {
+                            Button { } label: { Image (systemName: "square.and.arrow. up") .foregroundColor(.blue) }
+                            Button { } label: { Image (systemName: "square.and.arrow. up") .foregroundColor(.blue) }
+                        }
+                        ToolbarItemGroup (placement: .navigationBarTrailing) {
+                            
+                            Button { } label: { Image(systemName: "list.clipboard.fill")
+                                                Text("")}
+                            
+                            Button { } label: { Image(systemName: "cross.case.fill")
+                                                Text("")}
+                            
+                            Button { } label: { Image(systemName: "calendar.circle.fill") }
+                            
+                        }
+                    }
+                    
+                    
   //                  .navigationTitle("Insights")
                 }
             }

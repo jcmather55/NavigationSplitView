@@ -70,6 +70,7 @@ struct EmployeeDetailView: View {
             }
         }
     }
+    
 }
 
 struct EmployeeView_Previews: PreviewProvider {
