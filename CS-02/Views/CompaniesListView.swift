@@ -109,8 +109,9 @@ NavigationSplitView(columnVisibility: $columnVisibility) {
         EmployeeDetailView(employeeId: employeeId)
     }
     .navigationSplitViewStyle(.balanced)
-    .onChange(of: companyId) { _ in employeeId = nil}
         
+    .onChange(of: companyId) { _ in employeeId = nil; columnVisibility = .doubleColumn}
+ 
     .onChange(of: employeeId) { _ in
         if employeeId == nil {
             columnVisibility = .all
