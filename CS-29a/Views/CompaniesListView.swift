@@ -69,18 +69,22 @@ struct CompaniesListView: View {
             .toolbar {
                 
                 ToolbarItemGroup (placement: .bottomBar) {
-                    Button { } label: { Image (systemName: "square.and.arrow. up") .foregroundColor(.blue) }
-                    Button { } label: { Image (systemName: "square.and.arrow. up") .foregroundColor(.blue) }
+                    Button { } label: { Image (systemName: "square.and.arrow.up")
+                        Text("cc")}
+                    Button { } label: { Image (systemName: "square.and.arrow.up") .foregroundColor(.blue)
+                        Text("xx")}
+                  
                 }
                 ToolbarItemGroup (placement: .navigationBarTrailing) {
                     
                     Button { } label: { Image(systemName: "list.clipboard.fill")
-                                        Text("")}
+                        Text("yy")}
                     
                     Button { } label: { Image(systemName: "cross.case.fill")
-                                        Text("")}
+                        Text("zz")}
                     
-                    Button { } label: { Image(systemName: "calendar.circle.fill") }
+                    Button { } label: { Image(systemName: "calendar.circle.fill")
+                        Text("cal")}
                     
                 }
             }
