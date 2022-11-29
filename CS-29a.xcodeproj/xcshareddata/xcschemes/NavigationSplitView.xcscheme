@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "BBAD59A3288BAFB700FB853D"
-               BuildableName = "CS-02.app"
-               BlueprintName = "CS-02"
-               ReferencedContainer = "container:CS-02.xcodeproj">
+               BuildableName = "CS-29a.app"
+               BlueprintName = "CS-29a"
+               ReferencedContainer = "container:CS-29a.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -45,9 +45,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "BBAD59A3288BAFB700FB853D"
-            BuildableName = "CS-02.app"
-            BlueprintName = "CS-02"
-            ReferencedContainer = "container:CS-02.xcodeproj">
+            BuildableName = "CS-29a.app"
+            BlueprintName = "CS-29a"
+            ReferencedContainer = "container:CS-29a.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -62,9 +62,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "BBAD59A3288BAFB700FB853D"
-            BuildableName = "CS-02.app"
-            BlueprintName = "CS-02"
-            ReferencedContainer = "container:CS-02.xcodeproj">
+            BuildableName = "CS-29a.app"
+            BlueprintName = "CS-29a"
+            ReferencedContainer = "container:CS-29a.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
