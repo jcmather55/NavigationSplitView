@@ -158,7 +158,7 @@ struct CompaniesListView: View {
 
                     .toolbar {
                         
-                        ToolbarItemGroup (placement: .bottomBar) {
+                        ToolbarItemGroup (placement: .secondaryAction) {
                             Button { } label: { Image (systemName: "books.vertical.fill")
                                 Text("Search")}
                             Spacer()
@@ -200,6 +200,7 @@ struct CompaniesListView: View {
     detail: {
         EmployeeDetailView(employeeId: employeeId)
     }
+   
     .navigationSplitViewStyle(.balanced)
         
     .onChange(of: companyId) { _ in employeeId = nil; columnVisibility = .doubleColumn}
@@ -210,7 +211,10 @@ struct CompaniesListView: View {
         } else {
             columnVisibility = .detailOnly
         }
+
+
     }
+        
     }
 }
 

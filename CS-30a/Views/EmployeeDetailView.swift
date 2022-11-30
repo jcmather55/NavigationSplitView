@@ -67,14 +67,13 @@ struct EmployeeDetailView: View {
                     .frame(width: 300)
                 Text("Insight Details")
                     .font(.title)
- 
+                
             }
         }
-
+ 
+        }
     }
-
     
-}
 
 struct EmployeeView_Previews: PreviewProvider {
     static var previews: some View {
