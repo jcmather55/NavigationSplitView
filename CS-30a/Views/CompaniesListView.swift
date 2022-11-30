@@ -69,13 +69,18 @@ struct CompaniesListView: View {
             .toolbar {
                 
                 ToolbarItemGroup (placement: .bottomBar) {
-                    Button { } label: { Image (systemName: "square.and.arrow.up")
-                        Text("cc")}
-                    Button { } label: { Image (systemName: "square.and.arrow.up") .foregroundColor(.blue)
-                        Text("xx")}
+                    Button { } label: { Image (systemName: "books.vertical.fill")
+                        Text("Search")}
+                    Spacer()
+                    Button { } label: { Image (systemName:
+                        "cross.case.fill")
+                        Text("Shop")}
+                    Spacer()
+                    Button { } label: { Image (systemName: "square.and.arrow.up.fill") .foregroundColor(.blue)
+                        Text("Share")}
                   
                 }
-                ToolbarItemGroup (placement: .navigationBarTrailing) {
+                ToolbarItemGroup (placement: .secondaryAction) {
                     
                     Button { } label: { Image(systemName: "list.clipboard.fill")
                         Text("yy")}
@@ -89,7 +94,10 @@ struct CompaniesListView: View {
                 }
             }
 
-    .navigationTitle("Patients")
+    .navigationTitle("My Family")
+
+
+
 
     
     
@@ -104,7 +112,7 @@ struct CompaniesListView: View {
                         .resizable()
                         .scaledToFit()
                         .padding(40)
-                    Text("What Patient?")
+                    Text("List of Insights")
                         .font(.title)
                 }
                 .padding()
@@ -147,24 +155,26 @@ struct CompaniesListView: View {
                     .toolbar {
                         
                         ToolbarItemGroup (placement: .bottomBar) {
-                            Button { } label: { Image (systemName: "square.and.arrow. up") .foregroundColor(.blue) }
-                            Button { } label: { Image (systemName: "square.and.arrow. up") .foregroundColor(.blue) }
+                            Button { } label: { Image (systemName: "square.and.arrow.up") .foregroundColor(.blue) }
+                            Button { } label: { Image (systemName: "square.and.arrow.up") .foregroundColor(.blue) }
                         }
-                        ToolbarItemGroup (placement: .navigationBarTrailing) {
+                        ToolbarItemGroup (placement: .secondaryAction) {
                             
                             Button { } label: { Image(systemName: "list.clipboard.fill")
-                                                Text("")}
+                                                Text("Chart")}
                             
                             Button { } label: { Image(systemName: "cross.case.fill")
-                                                Text("")}
+                                                Text("Shop")}
                             
-                            Button { } label: { Image(systemName: "calendar.circle.fill") }
+                            Button { } label: { Image(systemName: "calendar.circle.fill")
+                                Text("Calendar")}
+                          
                             
                         }
                     }
                     
                     
- //                   .navigationTitle("Insights")
+                    .navigationTitle("Insights")
 
                 }
             }

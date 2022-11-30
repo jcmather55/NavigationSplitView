@@ -65,11 +65,14 @@ struct EmployeeDetailView: View {
                     .resizable()
                     .scaledToFit()
                     .frame(width: 300)
-                Text("What Condition?")
+                Text("Insight Details")
                     .font(.title)
+ 
             }
         }
+
     }
+
     
 }
 
