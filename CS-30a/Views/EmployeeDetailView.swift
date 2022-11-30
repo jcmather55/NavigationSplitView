@@ -33,8 +33,8 @@ struct EmployeeDetailView: View {
                     }
                     
                     Spacer()
-                    Text("Insight: " + employee.fullName)
-                        .font(.title) .bold()
+                    Text("Insight details for:   " + employee.fullName)
+                        .font(.title)
                     Text("\"" + employee.slogan + "\"")
                         .font(.largeTitle)
                         .fontWeight(.thin)
@@ -70,9 +70,9 @@ struct EmployeeDetailView: View {
                 
             }
         }
- 
-        }
+        
     }
+}
     
 
 struct EmployeeView_Previews: PreviewProvider {

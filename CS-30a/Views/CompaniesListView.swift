@@ -22,10 +22,12 @@ struct CompaniesListView: View {
     let appVersion = Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString") as? String ?? "-"
     let appName = Bundle.main.object(forInfoDictionaryKey: "CFBundleName") as? String ?? "--"
 
-//  Mark: - Start of Navigation Split View
+// MARK: - NAVIGATION SPLIT VIEW... START
         
         NavigationSplitView(columnVisibility: $columnVisibility) {
             
+            // To display the App Name & Version
+
             HStack {
                 Text("\(appName)  \(appVersion)")
                     .font(.caption2)
@@ -33,11 +35,10 @@ struct CompaniesListView: View {
                     .italic()
             }
             
-            // NSV Part 1 - "Company List"
+            // NSV Part 1 - "Company/Patient List"
             
             List(store.companies, selection: $companyId) { company in
-                
-                
+            
                 HStack (alignment: .top) {
                     Image(systemName: "person.crop.circle")
                         .font(.largeTitle)
@@ -64,9 +65,11 @@ struct CompaniesListView: View {
                 }
             }
  
-// The toobar on the first "Patient Panel" list
+
             
             .toolbar {
+                
+                // The bottom toobar on the first "Patient Panel" sidebar
                 
                 ToolbarItemGroup (placement: .bottomBar) {
                     Button { } label: { Image (systemName: "books.vertical.fill")
@@ -78,10 +81,9 @@ struct CompaniesListView: View {
                     Spacer()
                     Button { } label: { Image (systemName: "square.and.arrow.up.fill") .foregroundColor(.blue)
                         Text("Share")}
-
-                  
                 }
 
+                // The top toolbar on the sidebar
                 
                 ToolbarItemGroup (placement: .secondaryAction) {
                     
@@ -97,17 +99,16 @@ struct CompaniesListView: View {
                 }
             }
             .font(.caption)
+
             
     .navigationTitle("My Family")
+    .toolbarBackground(.blue.gradient, for: .navigationBar)
+    .toolbarBackground(.visible, for: .navigationBar)
+    .toolbarColorScheme(.dark, for: .navigationBar)
 
-
-
-
-    
-    
 }
 
-// NSV - Part 2a - "EmployeeListView (Embedded)"
+// MARK: - CONTENT SECTION OF NAVIGATION SPLIT VIEW
     
     content: {
             if companyId == nil {
@@ -124,7 +125,7 @@ struct CompaniesListView: View {
                 if let company = store.company(id: companyId!) {
      
   
-// This is the Patient Title Block for the Insignts List View
+            // This is the Patient Title Block for top of Insignts List View
                     
                     GroupBox {
                         HStack {
@@ -136,8 +137,8 @@ struct CompaniesListView: View {
                                     .fontWeight(.bold)
                                 Text("Profile")
                                     .font(.caption)
-                                Text("More Data Title")
-                                    .font(.largeTitle)
+                                Text("Summary of all Insights")
+                                    .font(.title)
                             }
                             Spacer()
                         }
@@ -145,15 +146,15 @@ struct CompaniesListView: View {
                     }
                     List(company.employees, selection: $employeeId) { employee in
    
-                        GroupBox  {
-                            VStack (alignment: .leading) {
-                                Text(employee.firstName)
-                                    .font(.largeTitle)
-                                Text("Insight Summary")
-                                    .font(.title)
-                            }
+                    GroupBox  {
+                        VStack (alignment: .leading) {
+                            Text(employee.firstName)
+                                .font(.headline)
+                            Text("Insight                                                                                               ")
+                                .font(.caption)
                         }
-                        
+                    }
+
                     }
 
                     .toolbar {
@@ -190,19 +191,23 @@ struct CompaniesListView: View {
                     
                     
                     .navigationTitle("Insights")
-
+                    .toolbarBackground(.teal.gradient, for: .navigationBar)
+                    .toolbarBackground(.visible, for: .navigationBar)
+                    .toolbarColorScheme(.dark, for: .navigationBar)
+                    
                 }
             }
         }
     
-// NSV - Part 3 "EmployeeDetailView
-        
+// MARK: - DETAIL SECTION OF NAVIGATION SPLIT VIEW
     detail: {
         EmployeeDetailView(employeeId: employeeId)
     }
-   
-    .navigationSplitViewStyle(.balanced)
         
+
+        .navigationTitle("Details")
+        .navigationSplitViewStyle(.balanced)
+ 
     .onChange(of: companyId) { _ in employeeId = nil; columnVisibility = .doubleColumn}
  
     .onChange(of: employeeId) { _ in
@@ -216,7 +221,11 @@ struct CompaniesListView: View {
     }
         
     }
+    
+
 }
+
+
 
 struct CompaniesListView_Previews: PreviewProvider {
     static var previews: some View {
