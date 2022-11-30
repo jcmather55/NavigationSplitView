@@ -32,7 +32,7 @@
 		BB06EC6228C5536F00BFFFD9 /* EmployeeDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeDetailView.swift; sourceTree = "<group>"; };
 		BB5988F728A37D4F006A1614 /* MOCK_DATA.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MOCK_DATA.json; sourceTree = "<group>"; };
 		BB80BDBF28A2E1490096746A /* StartTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartTabView.swift; sourceTree = "<group>"; };
-		BBAD59A4288BAFB700FB853D /* CS-30a.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CS-30a.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BBAD59A4288BAFB700FB853D /* CS-30b.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CS-30b.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBAD59A7288BAFB700FB853D /* AppEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppEntry.swift; sourceTree = "<group>"; };
 		BBAD59A9288BAFB700FB853D /* CompaniesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompaniesListView.swift; sourceTree = "<group>"; };
 		BBAD59AB288BAFB800FB853D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -68,7 +68,7 @@
 		BBAD599B288BAFB700FB853D = {
 			isa = PBXGroup;
 			children = (
-				BBAD59A6288BAFB700FB853D /* CS-30a */,
+				BBAD59A6288BAFB700FB853D /* CS-30b */,
 				BBAD59A5288BAFB700FB853D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -76,12 +76,12 @@
 		BBAD59A5288BAFB700FB853D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				BBAD59A4288BAFB700FB853D /* CS-30a.app */,
+				BBAD59A4288BAFB700FB853D /* CS-30b.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		BBAD59A6288BAFB700FB853D /* CS-30a */ = {
+		BBAD59A6288BAFB700FB853D /* CS-30b */ = {
 			isa = PBXGroup;
 			children = (
 				BBAD59A7288BAFB700FB853D /* AppEntry.swift */,
@@ -94,7 +94,7 @@
 				BBC6DA4A288C5FA1004C0AF6 /* Launch Screen.storyboard */,
 				BBAD59AD288BAFB800FB853D /* Preview Content */,
 			);
-			path = "CS-30a";
+			path = "CS-30b";
 			sourceTree = "<group>";
 		};
 		BBAD59AD288BAFB800FB853D /* Preview Content */ = {
@@ -130,9 +130,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		BBAD59A3288BAFB700FB853D /* CS-30a */ = {
+		BBAD59A3288BAFB700FB853D /* CS-30b */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = BBAD59B2288BAFB800FB853D /* Build configuration list for PBXNativeTarget "CS-30a" */;
+			buildConfigurationList = BBAD59B2288BAFB800FB853D /* Build configuration list for PBXNativeTarget "CS-30b" */;
 			buildPhases = (
 				BBAD59A0288BAFB700FB853D /* Sources */,
 				BBAD59A1288BAFB700FB853D /* Frameworks */,
@@ -142,9 +142,9 @@
 			);
 			dependencies = (
 			);
-			name = "CS-30a";
+			name = "CS-30b";
 			productName = ThreeColNav;
-			productReference = BBAD59A4288BAFB700FB853D /* CS-30a.app */;
+			productReference = BBAD59A4288BAFB700FB853D /* CS-30b.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -162,7 +162,7 @@
 					};
 				};
 			};
-			buildConfigurationList = BBAD599F288BAFB700FB853D /* Build configuration list for PBXProject "CS-30a" */;
+			buildConfigurationList = BBAD599F288BAFB700FB853D /* Build configuration list for PBXProject "CS-30b" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -175,7 +175,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				BBAD59A3288BAFB700FB853D /* CS-30a */,
+				BBAD59A3288BAFB700FB853D /* CS-30b */,
 			);
 		};
 /* End PBXProject section */
@@ -338,7 +338,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"CS-30a\"";
+				DEVELOPMENT_ASSET_PATHS = "\"CS-30b\"";
 				DEVELOPMENT_TEAM = J9PF4W2Z3N;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -355,7 +355,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = "2022-11-30b";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.CMTLS.CS-02.30a";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.CMTLS.CS-02.30b";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -370,7 +370,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"CS-30a\"";
+				DEVELOPMENT_ASSET_PATHS = "\"CS-30b\"";
 				DEVELOPMENT_TEAM = J9PF4W2Z3N;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -387,7 +387,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = "2022-11-30b";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.CMTLS.CS-02.30a";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.CMTLS.CS-02.30b";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -398,7 +398,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		BBAD599F288BAFB700FB853D /* Build configuration list for PBXProject "CS-30a" */ = {
+		BBAD599F288BAFB700FB853D /* Build configuration list for PBXProject "CS-30b" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BBAD59B0288BAFB800FB853D /* Debug */,
@@ -407,7 +407,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BBAD59B2288BAFB800FB853D /* Build configuration list for PBXNativeTarget "CS-30a" */ = {
+		BBAD59B2288BAFB800FB853D /* Build configuration list for PBXNativeTarget "CS-30b" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BBAD59B3288BAFB800FB853D /* Debug */,
