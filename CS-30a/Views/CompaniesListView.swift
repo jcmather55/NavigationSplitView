@@ -51,10 +51,10 @@ struct CompaniesListView: View {
                             .font(.caption)
                             .padding(.bottom)
                         
-                        GroupBox {
-                            Text("Virtual appointment - 00:00")
-                                .font(.caption2)
-                        }
+//                        GroupBox {
+//                            Text("Virtual appointment - 00:00")
+//                                .font(.caption2)
+//                        }
                     }
                     Spacer()
                     Image(systemName: "checkmark.seal.fill")
@@ -78,8 +78,11 @@ struct CompaniesListView: View {
                     Spacer()
                     Button { } label: { Image (systemName: "square.and.arrow.up.fill") .foregroundColor(.blue)
                         Text("Share")}
+
                   
                 }
+
+                
                 ToolbarItemGroup (placement: .secondaryAction) {
                     
                     Button { } label: { Image(systemName: "list.clipboard.fill")
@@ -93,7 +96,8 @@ struct CompaniesListView: View {
                     
                 }
             }
-
+            .font(.caption)
+            
     .navigationTitle("My Family")
 
 
@@ -155,23 +159,34 @@ struct CompaniesListView: View {
                     .toolbar {
                         
                         ToolbarItemGroup (placement: .bottomBar) {
-                            Button { } label: { Image (systemName: "square.and.arrow.up") .foregroundColor(.blue) }
-                            Button { } label: { Image (systemName: "square.and.arrow.up") .foregroundColor(.blue) }
+                            Button { } label: { Image (systemName: "books.vertical.fill")
+                                Text("Search")}
+                            Spacer()
+                            Button { } label: { Image (systemName:
+                                "cross.case.fill")
+                                Text("Shop")}
+                            Spacer()
+                            Button { } label: { Image (systemName: "square.and.arrow.up.fill") .foregroundColor(.blue)
+                                Text("Share")}
+
+                          
                         }
+
+                        
                         ToolbarItemGroup (placement: .secondaryAction) {
                             
                             Button { } label: { Image(systemName: "list.clipboard.fill")
-                                                Text("Chart")}
+                                Text("yy")}
                             
                             Button { } label: { Image(systemName: "cross.case.fill")
-                                                Text("Shop")}
+                                Text("zz")}
                             
                             Button { } label: { Image(systemName: "calendar.circle.fill")
-                                Text("Calendar")}
-                          
+                                Text("cal")}
                             
                         }
                     }
+                    .font(.caption)
                     
                     
                     .navigationTitle("Insights")
