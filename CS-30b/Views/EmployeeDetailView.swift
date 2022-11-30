@@ -31,6 +31,10 @@ struct EmployeeDetailView: View {
                             Spacer()
                         }
                     }
+                    .navigationTitle(employee.firstName)
+                    .toolbarBackground(.green.gradient, for: .navigationBar)
+                    .toolbarBackground(.visible, for: .navigationBar)
+                    .toolbarColorScheme(.dark, for: .navigationBar)
                     
                     Spacer()
                     Text("Insight details for:   " + employee.fullName)

@@ -132,13 +132,15 @@ struct CompaniesListView: View {
                             Image(systemName: "person.crop.circle")
                                 .font(.largeTitle)
                             VStack (alignment: .leading) {
-                                Text(company.name)
-                                    .font(.headline)
-                                    .fontWeight(.bold)
-                                Text("Profile")
-                                    .font(.caption)
+//                                Text(company.name)
+//                                    .font(.headline)
+//                                    .fontWeight(.bold)
+//                                Text("Profile")
+//                                    .font(.caption)
                                 Text("Summary of all Insights")
                                     .font(.title)
+                                    .padding()
+                                
                             }
                             Spacer()
                         }
@@ -190,7 +192,7 @@ struct CompaniesListView: View {
                     .font(.caption)
                     
                     
-                    .navigationTitle("Insights")
+                    .navigationTitle(company.name)
                     .toolbarBackground(.teal.gradient, for: .navigationBar)
                     .toolbarBackground(.visible, for: .navigationBar)
                     .toolbarColorScheme(.dark, for: .navigationBar)
@@ -205,7 +207,7 @@ struct CompaniesListView: View {
     }
         
 
-        .navigationTitle("Details")
+
         .navigationSplitViewStyle(.balanced)
  
     .onChange(of: companyId) { _ in employeeId = nil; columnVisibility = .doubleColumn}
