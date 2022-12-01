@@ -16,25 +16,27 @@ struct EmployeeDetailView: View {
         if let employeeId {
             if let employee = store.employee(id: employeeId) {
                 VStack {
+                 Text ("")
+//                    GroupBox {
+//                        HStack {
+//                            Image(systemName: "waveform.path.ecg.rectangle")
+//                                .font(.largeTitle)
+//                            VStack (alignment: .leading) {
+//                                Text(employee.company.name)
+//                                    .font(.headline)
+//                                    .fontWeight(.bold)
+//                                Text("As of:  December 1, 2022")
+//                                    .font(.caption .italic())
+//
+//                            }
+//                            Spacer()
+//                        }
+//                    }
                     
-                    GroupBox {
-                        HStack {
-                            Image(systemName: "hc.lab.results")
-                                .font(.largeTitle)
-                            VStack (alignment: .leading) {
-                                Text(employee.firstName)
-                                    .font(.headline)
-                                    .fontWeight(.bold)
-                                Text("As of:  December 1, 2022")
-                                    .font(.caption)
-                            }
-                            Spacer()
-                        }
-                    }
                     
-                    
-                    .navigationTitle(employee.firstName + " - " + employee.company.name)
-                    .toolbarBackground(.green.gradient, for: .navigationBar)
+                        .navigationTitle(employee.firstName)
+
+                    .toolbarBackground(.orange.gradient, for: .navigationBar)
                     .toolbarBackground(.visible, for: .navigationBar)
                     .toolbarColorScheme(.dark, for: .navigationBar)
                     
@@ -71,7 +73,7 @@ struct EmployeeDetailView: View {
                     .resizable()
                     .scaledToFit()
                     .frame(width: 300)
-                Text("Insight Details")
+                Text("Insight details display here...")
                     .font(.title)
                 
             }

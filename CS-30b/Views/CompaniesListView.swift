@@ -66,7 +66,7 @@ struct CompaniesListView: View {
             }
  
 
-            
+            .padding(0.01)
             .toolbar {
                 
                 // The bottom toobar on the first "Patient Panel" sidebar
@@ -106,6 +106,7 @@ struct CompaniesListView: View {
     .toolbarBackground(.visible, for: .navigationBar)
     .toolbarColorScheme(.dark, for: .navigationBar)
 
+
 }
 
 // MARK: - CONTENT SECTION OF NAVIGATION SPLIT VIEW
@@ -127,25 +128,26 @@ struct CompaniesListView: View {
   
             // This is the Patient Title Block for top of Insignts List View
                     
-                    GroupBox {
-                        HStack {
-                            Image(systemName: "person.crop.circle")
-                                .font(.largeTitle)
-                            VStack (alignment: .leading) {
-//                                Text(company.name)
+//                    GroupBox {
+//                        HStack {
+//                            Image(systemName: "person.crop.circle")
+//                                .font(.largeTitle)
+//                            VStack (alignment: .leading) {
+//                               Text(company.name)
 //                                    .font(.headline)
 //                                    .fontWeight(.bold)
+//
 //                                Text("Profile")
 //                                    .font(.caption)
-                                Text("Summary of all Insights")
-                                    .font(.title)
-                                    .padding()
-                                
-                            }
-                            Spacer()
-                        }
-                   
-                    }
+//                                Text("Summary of all Insights")
+//                                    .font(.title)
+//                                    .padding()
+//
+//                            }
+//                            Spacer()
+//                        }
+//
+//                    }
                     List(company.employees, selection: $employeeId) { employee in
    
                     GroupBox  {
@@ -158,7 +160,7 @@ struct CompaniesListView: View {
                     }
 
                     }
-
+                    .padding()
                     .toolbar {
                         
                         ToolbarItemGroup (placement: .secondaryAction) {
