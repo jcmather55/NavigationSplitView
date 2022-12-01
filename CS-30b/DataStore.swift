@@ -25,21 +25,21 @@ class DataStore: ObservableObject {
     
     func loadData() {
         let json = Bundle.main.decode([FamilyMemberJSON].self, from: "MOCK_DATA.json")
-        for company in json {
-            var newCompany = Member(id: company.id, name: company.name)
-            for employee in company.employees {
-                let newEmployee = Insight(id: employee.id,
-                                           insightname: employee.insightname,
-                                           lastName: employee.lastName,
-                                           department: employee.department,
-                                           slogan: employee.slogan,
-                                           title: employee.title,
-                                           company: newCompany)
-                Insights.append(newEmployee)
-                newCompany.employees.append(newEmployee)
+        for familymember in json {
+            var newFamilyMember = Member(id: familymember.id, name: familymember.name)
+            for insight in familymember.insights {
+                let newInsight = Insight(id: insight.id,
+                                           insightname: insight.insightname,
+                                           lastName: insight.lastName,
+                                           department: insight.department,
+                                           slogan: insight.slogan,
+                                           title: insight.title,
+                                           company: newFamilyMember)
+                Insights.append(newInsight)
+                newFamilyMember.employees.append(newInsight)
             }
-            newCompany.employees = newCompany.employees.sorted(using: KeyPathComparator(\.lastName))
-            FamilyMembers.append(newCompany)
+            newFamilyMember.employees = newFamilyMember.employees.sorted(using: KeyPathComparator(\.lastName))
+            FamilyMembers.append(newFamilyMember)
             
         }
         FamilyMembers = FamilyMembers.sorted(using: KeyPathComparator(\.name))

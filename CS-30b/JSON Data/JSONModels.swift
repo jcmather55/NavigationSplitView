@@ -12,9 +12,9 @@ import Foundation
     struct FamilyMemberJSON: Codable, Identifiable {
         var name: String
         let id: String
-        var employees: [Employee]
+        var insights: [Insight]
         
-        struct Employee: Codable, Identifiable, Hashable {
+        struct Insight: Codable, Identifiable, Hashable {
             let id: String
             var insightname: String
             var lastName: String
