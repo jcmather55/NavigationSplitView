@@ -9,7 +9,7 @@
 
 import SwiftUI
 
-struct CompaniesListView: View {
+struct FamilyMembersListView: View {
     @EnvironmentObject var store: DataStore
     @State private var companyId: Member.ID?
     @State private var employeeId: Insight.ID?
@@ -206,7 +206,7 @@ struct CompaniesListView: View {
     
 // MARK: - DETAIL SECTION OF NAVIGATION SPLIT VIEW
     detail: {
-        EmployeeDetailView(employeeId: employeeId)
+        InsightDetailView(employeeId: employeeId)
     }
         
 
@@ -232,9 +232,9 @@ struct CompaniesListView: View {
 
 
 
-struct CompaniesListView_Previews: PreviewProvider {
+struct FamilyMembesListView_Previews: PreviewProvider {
     static var previews: some View {
-        CompaniesListView()
+        FamilyMembersListView()
             .environmentObject(DataStore())
     }
 }

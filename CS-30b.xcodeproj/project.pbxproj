@@ -7,14 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		792C892D291D4B70009E503A /* EmployeeContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792C892C291D4B70009E503A /* EmployeeContentView.swift */; };
+		792C892D291D4B70009E503A /* InsightsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792C892C291D4B70009E503A /* InsightsListView.swift */; };
 		79B07158291683EF005FEE34 /* MedicalKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B07157291683EF005FEE34 /* MedicalKit.swift */; };
 		79B0715A29168719005FEE34 /* Appointments.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B0715929168719005FEE34 /* Appointments.swift */; };
-		BB06EC6328C5536F00BFFFD9 /* EmployeeDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB06EC6228C5536F00BFFFD9 /* EmployeeDetailView.swift */; };
+		BB06EC6328C5536F00BFFFD9 /* InsightDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB06EC6228C5536F00BFFFD9 /* InsightDetailView.swift */; };
 		BB5988F828A37D4F006A1614 /* MOCK_DATA.json in Resources */ = {isa = PBXBuildFile; fileRef = BB5988F728A37D4F006A1614 /* MOCK_DATA.json */; };
 		BB80BDC028A2E1490096746A /* StartTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB80BDBF28A2E1490096746A /* StartTabView.swift */; };
 		BBAD59A8288BAFB700FB853D /* AppEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBAD59A7288BAFB700FB853D /* AppEntry.swift */; };
-		BBAD59AA288BAFB700FB853D /* CompaniesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBAD59A9288BAFB700FB853D /* CompaniesListView.swift */; };
+		BBAD59AA288BAFB700FB853D /* FamilyMembersListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBAD59A9288BAFB700FB853D /* FamilyMembersListView.swift */; };
 		BBAD59AC288BAFB800FB853D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BBAD59AB288BAFB800FB853D /* Assets.xcassets */; };
 		BBAD59AF288BAFB800FB853D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BBAD59AE288BAFB800FB853D /* Preview Assets.xcassets */; };
 		BBAD59B6288BAFE300FB853D /* JSONModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBAD59B5288BAFE300FB853D /* JSONModels.swift */; };
@@ -26,15 +26,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		792C892C291D4B70009E503A /* EmployeeContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeContentView.swift; sourceTree = "<group>"; };
+		792C892C291D4B70009E503A /* InsightsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsightsListView.swift; sourceTree = "<group>"; };
 		79B07157291683EF005FEE34 /* MedicalKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicalKit.swift; sourceTree = "<group>"; };
 		79B0715929168719005FEE34 /* Appointments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Appointments.swift; sourceTree = "<group>"; };
-		BB06EC6228C5536F00BFFFD9 /* EmployeeDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeDetailView.swift; sourceTree = "<group>"; };
+		BB06EC6228C5536F00BFFFD9 /* InsightDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsightDetailView.swift; sourceTree = "<group>"; };
 		BB5988F728A37D4F006A1614 /* MOCK_DATA.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MOCK_DATA.json; sourceTree = "<group>"; };
 		BB80BDBF28A2E1490096746A /* StartTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartTabView.swift; sourceTree = "<group>"; };
 		BBAD59A4288BAFB700FB853D /* CS-30b.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CS-30b.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBAD59A7288BAFB700FB853D /* AppEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppEntry.swift; sourceTree = "<group>"; };
-		BBAD59A9288BAFB700FB853D /* CompaniesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompaniesListView.swift; sourceTree = "<group>"; };
+		BBAD59A9288BAFB700FB853D /* FamilyMembersListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamilyMembersListView.swift; sourceTree = "<group>"; };
 		BBAD59AB288BAFB800FB853D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BBAD59AE288BAFB800FB853D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BBAD59B5288BAFE300FB853D /* JSONModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONModels.swift; sourceTree = "<group>"; };
@@ -118,9 +118,9 @@
 			isa = PBXGroup;
 			children = (
 				BB80BDBF28A2E1490096746A /* StartTabView.swift */,
-				BBAD59A9288BAFB700FB853D /* CompaniesListView.swift */,
-				792C892C291D4B70009E503A /* EmployeeContentView.swift */,
-				BB06EC6228C5536F00BFFFD9 /* EmployeeDetailView.swift */,
+				BBAD59A9288BAFB700FB853D /* FamilyMembersListView.swift */,
+				792C892C291D4B70009E503A /* InsightsListView.swift */,
+				BB06EC6228C5536F00BFFFD9 /* InsightDetailView.swift */,
 				79B07157291683EF005FEE34 /* MedicalKit.swift */,
 				79B0715929168719005FEE34 /* Appointments.swift */,
 			);
@@ -199,15 +199,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BB06EC6328C5536F00BFFFD9 /* EmployeeDetailView.swift in Sources */,
+				BB06EC6328C5536F00BFFFD9 /* InsightDetailView.swift in Sources */,
 				BBAD59B6288BAFE300FB853D /* JSONModels.swift in Sources */,
 				BBAD59C2288BB12A00FB853D /* DataStore.swift in Sources */,
 				BBAD59BC288BB02D00FB853D /* Bundle+Extension.swift in Sources */,
-				BBAD59AA288BAFB700FB853D /* CompaniesListView.swift in Sources */,
+				BBAD59AA288BAFB700FB853D /* FamilyMembersListView.swift in Sources */,
 				BBAD59C0288BB08600FB853D /* Insight.swift in Sources */,
 				BB80BDC028A2E1490096746A /* StartTabView.swift in Sources */,
 				BBAD59A8288BAFB700FB853D /* AppEntry.swift in Sources */,
-				792C892D291D4B70009E503A /* EmployeeContentView.swift in Sources */,
+				792C892D291D4B70009E503A /* InsightsListView.swift in Sources */,
 				BBAD59BE288BB05500FB853D /* Member.swift in Sources */,
 				79B07158291683EF005FEE34 /* MedicalKit.swift in Sources */,
 				79B0715A29168719005FEE34 /* Appointments.swift in Sources */,

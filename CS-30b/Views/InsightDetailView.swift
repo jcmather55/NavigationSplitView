@@ -9,7 +9,7 @@
 
 import SwiftUI
 
-struct EmployeeDetailView: View {
+struct InsightDetailView: View {
     @EnvironmentObject var store: DataStore
     var employeeId: Insight.ID?
     var body: some View {
@@ -83,9 +83,9 @@ struct EmployeeDetailView: View {
 }
     
 
-struct EmployeeView_Previews: PreviewProvider {
+struct InsightDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        EmployeeDetailView(employeeId: "92c08f4a-d5bf-49e4-809f-7aefaa155c16")
+        InsightDetailView(employeeId: "92c08f4a-d5bf-49e4-809f-7aefaa155c16")
             .environmentObject(DataStore())
     }
 }
