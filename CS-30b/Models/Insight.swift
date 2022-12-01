@@ -10,14 +10,14 @@
 
 import Foundation
 
-struct Employee: Identifiable {
+struct Insight: Identifiable {
     var id: String
     var firstName: String
     var lastName: String
     var department: String
     var slogan: String
     var title: String
-    var company: Company
+    var company: Member
     
     var fullName: String {
         firstName + " " + lastName

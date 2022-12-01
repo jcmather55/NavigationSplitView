@@ -19,8 +19,8 @@
 		BBAD59AF288BAFB800FB853D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BBAD59AE288BAFB800FB853D /* Preview Assets.xcassets */; };
 		BBAD59B6288BAFE300FB853D /* JSONModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBAD59B5288BAFE300FB853D /* JSONModels.swift */; };
 		BBAD59BC288BB02D00FB853D /* Bundle+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBAD59BB288BB02D00FB853D /* Bundle+Extension.swift */; };
-		BBAD59BE288BB05500FB853D /* Company.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBAD59BD288BB05500FB853D /* Company.swift */; };
-		BBAD59C0288BB08600FB853D /* Employee.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBAD59BF288BB08600FB853D /* Employee.swift */; };
+		BBAD59BE288BB05500FB853D /* Member.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBAD59BD288BB05500FB853D /* Member.swift */; };
+		BBAD59C0288BB08600FB853D /* Insight.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBAD59BF288BB08600FB853D /* Insight.swift */; };
 		BBAD59C2288BB12A00FB853D /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBAD59C1288BB12A00FB853D /* DataStore.swift */; };
 		BBC6DA4B288C5FA1004C0AF6 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBC6DA4A288C5FA1004C0AF6 /* Launch Screen.storyboard */; };
 /* End PBXBuildFile section */
@@ -39,8 +39,8 @@
 		BBAD59AE288BAFB800FB853D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BBAD59B5288BAFE300FB853D /* JSONModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONModels.swift; sourceTree = "<group>"; };
 		BBAD59BB288BB02D00FB853D /* Bundle+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bundle+Extension.swift"; sourceTree = "<group>"; };
-		BBAD59BD288BB05500FB853D /* Company.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Company.swift; sourceTree = "<group>"; };
-		BBAD59BF288BB08600FB853D /* Employee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Employee.swift; sourceTree = "<group>"; };
+		BBAD59BD288BB05500FB853D /* Member.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Member.swift; sourceTree = "<group>"; };
+		BBAD59BF288BB08600FB853D /* Insight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Insight.swift; sourceTree = "<group>"; };
 		BBAD59C1288BB12A00FB853D /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
 		BBC6DA4A288C5FA1004C0AF6 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -108,8 +108,8 @@
 		BBB1EA2728C4573E00F0228A /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				BBAD59BF288BB08600FB853D /* Employee.swift */,
-				BBAD59BD288BB05500FB853D /* Company.swift */,
+				BBAD59BF288BB08600FB853D /* Insight.swift */,
+				BBAD59BD288BB05500FB853D /* Member.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -204,11 +204,11 @@
 				BBAD59C2288BB12A00FB853D /* DataStore.swift in Sources */,
 				BBAD59BC288BB02D00FB853D /* Bundle+Extension.swift in Sources */,
 				BBAD59AA288BAFB700FB853D /* CompaniesListView.swift in Sources */,
-				BBAD59C0288BB08600FB853D /* Employee.swift in Sources */,
+				BBAD59C0288BB08600FB853D /* Insight.swift in Sources */,
 				BB80BDC028A2E1490096746A /* StartTabView.swift in Sources */,
 				BBAD59A8288BAFB700FB853D /* AppEntry.swift in Sources */,
 				792C892D291D4B70009E503A /* EmployeeContentView.swift in Sources */,
-				BBAD59BE288BB05500FB853D /* Company.swift in Sources */,
+				BBAD59BE288BB05500FB853D /* Member.swift in Sources */,
 				79B07158291683EF005FEE34 /* MedicalKit.swift in Sources */,
 				79B0715A29168719005FEE34 /* Appointments.swift in Sources */,
 			);

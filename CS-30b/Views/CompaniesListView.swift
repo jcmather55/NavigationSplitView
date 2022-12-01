@@ -11,8 +11,8 @@ import SwiftUI
 
 struct CompaniesListView: View {
     @EnvironmentObject var store: DataStore
-    @State private var companyId: Company.ID?
-    @State private var employeeId: Employee.ID?
+    @State private var companyId: Member.ID?
+    @State private var employeeId: Insight.ID?
     @State private var columnVisibility:
     
     NavigationSplitViewVisibility = .all
@@ -37,7 +37,7 @@ struct CompaniesListView: View {
             
             // NSV Part 1 - "Company/Patient List"
             
-            List(store.companies, selection: $companyId) { company in
+            List(store.FamilyMembers, selection: $companyId) { company in
             
                 HStack (alignment: .top) {
                     Image(systemName: "person.crop.circle")

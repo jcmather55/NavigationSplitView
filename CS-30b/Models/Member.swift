@@ -10,8 +10,8 @@
 
 import Foundation
 
-struct Company: Identifiable {
+struct Member: Identifiable {
     var id: String
     var name: String
-    var employees: [Employee] = []
+    var employees: [Insight] = []
 }

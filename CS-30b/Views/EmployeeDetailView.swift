@@ -11,7 +11,7 @@ import SwiftUI
 
 struct EmployeeDetailView: View {
     @EnvironmentObject var store: DataStore
-    var employeeId: Employee.ID?
+    var employeeId: Insight.ID?
     var body: some View {
         if let employeeId {
             if let employee = store.employee(id: employeeId) {

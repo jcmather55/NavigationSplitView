@@ -11,12 +11,12 @@
 import Foundation
 
 class DataStore: ObservableObject {
-    @Published var companies: [Company] = []
-    @Published var employees: [Employee] = []
-    @Published var employeeFilter = ""
+    @Published var FamilyMembers: [Member] = []
+    @Published var Insights: [Insight] = []
+    @Published var insightsFilter = ""
     
-    var filteredEmployees: [Employee] {
-        employeeFilter.isEmpty ? employees : employees.filter {$0.fullName.lowercased().contains(employeeFilter.lowercased())}
+    var filteredEmployees: [Insight] {
+        insightsFilter.isEmpty ? Insights : Insights.filter {$0.fullName.lowercased().contains(insightsFilter.lowercased())}
     }
 
     init() {
@@ -26,31 +26,31 @@ class DataStore: ObservableObject {
     func loadData() {
         let json = Bundle.main.decode([CompanyJSON].self, from: "MOCK_DATA.json")
         for company in json {
-            var newCompany = Company(id: company.id, name: company.name)
+            var newCompany = Member(id: company.id, name: company.name)
             for employee in company.employees {
-                let newEmployee = Employee(id: employee.id,
+                let newEmployee = Insight(id: employee.id,
                                            firstName: employee.firstName,
                                            lastName: employee.lastName,
                                            department: employee.department,
                                            slogan: employee.slogan,
                                            title: employee.title,
                                            company: newCompany)
-                employees.append(newEmployee)
+                Insights.append(newEmployee)
                 newCompany.employees.append(newEmployee)
             }
             newCompany.employees = newCompany.employees.sorted(using: KeyPathComparator(\.lastName))
-            companies.append(newCompany)
+            FamilyMembers.append(newCompany)
             
         }
-        companies = companies.sorted(using: KeyPathComparator(\.name))
-        employees = employees.sorted(using: KeyPathComparator(\.lastName))
+        FamilyMembers = FamilyMembers.sorted(using: KeyPathComparator(\.name))
+        Insights = Insights.sorted(using: KeyPathComparator(\.lastName))
     }
     
-    func employee(id: String) -> Employee? {
-        employees.first(where: {$0.id == id})
+    func employee(id: String) -> Insight? {
+        Insights.first(where: {$0.id == id})
     }
     
-    func company(id: String) -> Company? {
-        companies.first(where: {$0.id == id})
+    func company(id: String) -> Member? {
+        FamilyMembers.first(where: {$0.id == id})
     }
 }
