@@ -13,13 +13,13 @@ import Foundation
 struct Insight: Identifiable {
     var id: String
     var insightname: String
-    var lastName: String
+    var insightCode: String
     var department: String
     var slogan: String
     var title: String
     var company: Member
     
     var fullName: String {
-        insightname + " " + lastName
+        insightname + " " + insightCode
     }
 }

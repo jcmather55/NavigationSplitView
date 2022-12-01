@@ -13,5 +13,5 @@ import Foundation
 struct Member: Identifiable {
     var id: String
     var name: String
-    var employees: [Insight] = []
+    var insights: [Insight] = []
 }

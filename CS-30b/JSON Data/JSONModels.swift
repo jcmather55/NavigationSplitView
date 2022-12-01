@@ -17,13 +17,13 @@ import Foundation
         struct Insight: Codable, Identifiable, Hashable {
             let id: String
             var insightname: String
-            var lastName: String
+            var insightCode: String
             var title: String
             var department: String
             var slogan: String
             
             var fullName: String {
-                insightname + " " + lastName
+                insightname + " " + insightCode
             }
         }
     }

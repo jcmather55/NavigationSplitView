@@ -148,7 +148,7 @@ struct CompaniesListView: View {
 //                        }
 //
 //                    }
-                    List(company.employees, selection: $employeeId) { employee in
+                    List(company.insights, selection: $employeeId) { employee in
    
                     GroupBox  {
                         VStack (alignment: .leading) {

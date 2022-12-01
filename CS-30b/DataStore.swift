@@ -30,20 +30,20 @@ class DataStore: ObservableObject {
             for insight in familymember.insights {
                 let newInsight = Insight(id: insight.id,
                                            insightname: insight.insightname,
-                                           lastName: insight.lastName,
+                                           insightCode: insight.insightCode,
                                            department: insight.department,
                                            slogan: insight.slogan,
                                            title: insight.title,
                                            company: newFamilyMember)
                 Insights.append(newInsight)
-                newFamilyMember.employees.append(newInsight)
+                newFamilyMember.insights.append(newInsight)
             }
-            newFamilyMember.employees = newFamilyMember.employees.sorted(using: KeyPathComparator(\.lastName))
+            newFamilyMember.insights = newFamilyMember.insights.sorted(using: KeyPathComparator(\.insightCode))
             FamilyMembers.append(newFamilyMember)
             
         }
         FamilyMembers = FamilyMembers.sorted(using: KeyPathComparator(\.name))
-        Insights = Insights.sorted(using: KeyPathComparator(\.lastName))
+        Insights = Insights.sorted(using: KeyPathComparator(\.insightCode))
     }
     
     func employee(id: String) -> Insight? {
