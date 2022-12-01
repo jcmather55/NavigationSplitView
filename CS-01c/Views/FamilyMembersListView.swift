@@ -75,7 +75,10 @@ struct FamilyMembersListView: View {
                     Button { } label: { Image (systemName: "books.vertical.fill")
                         Text("Search")}
                     Spacer()
-                    Button { } label: { Image (systemName:
+                    Button {
+//                        HomeMedicalKitView()
+                    }
+                label: { Image (systemName:
                         "cross.case.fill")
                         Text("Shop")}
                     Spacer()

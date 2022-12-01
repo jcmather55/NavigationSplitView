@@ -1,5 +1,5 @@
 //
-//  Appointments.swift
+//  HomeMedKit.swift
 //  NavigationSplitView
 //
 //  Created by John C Mather on 11/5/22.
@@ -7,17 +7,17 @@
 
 import SwiftUI
 
-struct Appointments: View {
+struct HomeMedicalKitView: View {
     var body: some View {
-        Text("Appointments")
+        Text("Home Medical Kit")
             .font(.largeTitle)
             .bold()
-            .foregroundColor(.red)
+            .foregroundColor(.blue)
     }
 }
 
-struct Appointments_Previews: PreviewProvider {
+struct HomeMedicalKitView_Previews: PreviewProvider {
     static var previews: some View {
-        Appointments()
+        HomeMedicalKitView()
     }
 }

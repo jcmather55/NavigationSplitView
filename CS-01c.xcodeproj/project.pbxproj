@@ -8,8 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		792C892D291D4B70009E503A /* InsightsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792C892C291D4B70009E503A /* InsightsListView.swift */; };
-		79B07158291683EF005FEE34 /* MedicalKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B07157291683EF005FEE34 /* MedicalKit.swift */; };
-		79B0715A29168719005FEE34 /* Appointments.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B0715929168719005FEE34 /* Appointments.swift */; };
+		79615DBC29393A9A00BABD7D /* ShareView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79615DBB29393A9A00BABD7D /* ShareView.swift */; };
+		79B07158291683EF005FEE34 /* HomeMedicalKitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B07157291683EF005FEE34 /* HomeMedicalKitView.swift */; };
+		79B0715A29168719005FEE34 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B0715929168719005FEE34 /* SearchView.swift */; };
 		BB06EC6328C5536F00BFFFD9 /* InsightDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB06EC6228C5536F00BFFFD9 /* InsightDetailView.swift */; };
 		BB5988F828A37D4F006A1614 /* MOCK_DATA.json in Resources */ = {isa = PBXBuildFile; fileRef = BB5988F728A37D4F006A1614 /* MOCK_DATA.json */; };
 		BB80BDC028A2E1490096746A /* StartTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB80BDBF28A2E1490096746A /* StartTabView.swift */; };
@@ -27,8 +28,9 @@
 
 /* Begin PBXFileReference section */
 		792C892C291D4B70009E503A /* InsightsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsightsListView.swift; sourceTree = "<group>"; };
-		79B07157291683EF005FEE34 /* MedicalKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicalKit.swift; sourceTree = "<group>"; };
-		79B0715929168719005FEE34 /* Appointments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Appointments.swift; sourceTree = "<group>"; };
+		79615DBB29393A9A00BABD7D /* ShareView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareView.swift; sourceTree = "<group>"; };
+		79B07157291683EF005FEE34 /* HomeMedicalKitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeMedicalKitView.swift; sourceTree = "<group>"; };
+		79B0715929168719005FEE34 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		BB06EC6228C5536F00BFFFD9 /* InsightDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsightDetailView.swift; sourceTree = "<group>"; };
 		BB5988F728A37D4F006A1614 /* MOCK_DATA.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MOCK_DATA.json; sourceTree = "<group>"; };
 		BB80BDBF28A2E1490096746A /* StartTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartTabView.swift; sourceTree = "<group>"; };
@@ -121,8 +123,9 @@
 				BBAD59A9288BAFB700FB853D /* FamilyMembersListView.swift */,
 				792C892C291D4B70009E503A /* InsightsListView.swift */,
 				BB06EC6228C5536F00BFFFD9 /* InsightDetailView.swift */,
-				79B07157291683EF005FEE34 /* MedicalKit.swift */,
-				79B0715929168719005FEE34 /* Appointments.swift */,
+				79B07157291683EF005FEE34 /* HomeMedicalKitView.swift */,
+				79B0715929168719005FEE34 /* SearchView.swift */,
+				79615DBB29393A9A00BABD7D /* ShareView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -208,9 +211,10 @@
 				BB80BDC028A2E1490096746A /* StartTabView.swift in Sources */,
 				BBAD59A8288BAFB700FB853D /* AppEntry.swift in Sources */,
 				792C892D291D4B70009E503A /* InsightsListView.swift in Sources */,
+				79615DBC29393A9A00BABD7D /* ShareView.swift in Sources */,
 				BBAD59BE288BB05500FB853D /* Member.swift in Sources */,
-				79B07158291683EF005FEE34 /* MedicalKit.swift in Sources */,
-				79B0715A29168719005FEE34 /* Appointments.swift in Sources */,
+				79B07158291683EF005FEE34 /* HomeMedicalKitView.swift in Sources */,
+				79B0715A29168719005FEE34 /* SearchView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
