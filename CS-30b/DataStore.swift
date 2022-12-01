@@ -24,12 +24,12 @@ class DataStore: ObservableObject {
     }
     
     func loadData() {
-        let json = Bundle.main.decode([CompanyJSON].self, from: "MOCK_DATA.json")
+        let json = Bundle.main.decode([FamilyMemberJSON].self, from: "MOCK_DATA.json")
         for company in json {
             var newCompany = Member(id: company.id, name: company.name)
             for employee in company.employees {
                 let newEmployee = Insight(id: employee.id,
-                                           firstName: employee.firstName,
+                                           insightname: employee.insightname,
                                            lastName: employee.lastName,
                                            department: employee.department,
                                            slogan: employee.slogan,

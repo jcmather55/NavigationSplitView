@@ -9,21 +9,21 @@
 
 import Foundation
 
-    struct CompanyJSON: Codable, Identifiable {
+    struct FamilyMemberJSON: Codable, Identifiable {
         var name: String
         let id: String
         var employees: [Employee]
         
         struct Employee: Codable, Identifiable, Hashable {
             let id: String
-            var firstName: String
+            var insightname: String
             var lastName: String
             var title: String
             var department: String
             var slogan: String
             
             var fullName: String {
-                firstName + " " + lastName
+                insightname + " " + lastName
             }
         }
     }

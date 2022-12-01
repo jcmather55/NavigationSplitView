@@ -34,14 +34,14 @@ struct EmployeeDetailView: View {
 //                    }
                     
                     
-                        .navigationTitle(employee.firstName)
+                        .navigationTitle(employee.insightname)
 
                     .toolbarBackground(.orange.gradient, for: .navigationBar)
                     .toolbarBackground(.visible, for: .navigationBar)
                     .toolbarColorScheme(.dark, for: .navigationBar)
                     
                     Spacer()
-                    Text("Insight Details:   " + employee.firstName)
+                    Text("Insight Details:   " + employee.insightname)
                         .font(.title)
                     Text("\"" + employee.slogan + "\"")
                         .font(.largeTitle)

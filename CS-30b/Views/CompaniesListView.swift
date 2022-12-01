@@ -152,7 +152,7 @@ struct CompaniesListView: View {
    
                     GroupBox  {
                         VStack (alignment: .leading) {
-                            Text(employee.firstName)
+                            Text(employee.insightname)
                                 .font(.headline)
                             Text("Insight                                                                                               ")
                                 .font(.caption)

@@ -12,7 +12,7 @@ import Foundation
 
 struct Insight: Identifiable {
     var id: String
-    var firstName: String
+    var insightname: String
     var lastName: String
     var department: String
     var slogan: String
@@ -20,6 +20,6 @@ struct Insight: Identifiable {
     var company: Member
     
     var fullName: String {
-        firstName + " " + lastName
+        insightname + " " + lastName
     }
 }
