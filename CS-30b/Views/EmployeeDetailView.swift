@@ -19,25 +19,27 @@ struct EmployeeDetailView: View {
                     
                     GroupBox {
                         HStack {
-                            Image(systemName: "person.crop.circle")
+                            Image(systemName: "hc.lab.results")
                                 .font(.largeTitle)
                             VStack (alignment: .leading) {
-                                Text(employee.company.name)
+                                Text(employee.firstName)
                                     .font(.headline)
                                     .fontWeight(.bold)
-                                Text("Profile")
+                                Text("As of:  December 1, 2022")
                                     .font(.caption)
                             }
                             Spacer()
                         }
                     }
-                    .navigationTitle(employee.firstName)
+                    
+                    
+                    .navigationTitle(employee.firstName + " - " + employee.company.name)
                     .toolbarBackground(.green.gradient, for: .navigationBar)
                     .toolbarBackground(.visible, for: .navigationBar)
                     .toolbarColorScheme(.dark, for: .navigationBar)
                     
                     Spacer()
-                    Text("Insight details for:   " + employee.fullName)
+                    Text("Insight Details:   " + employee.firstName)
                         .font(.title)
                     Text("\"" + employee.slogan + "\"")
                         .font(.largeTitle)
