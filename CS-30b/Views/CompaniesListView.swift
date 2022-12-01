@@ -119,7 +119,8 @@ struct CompaniesListView: View {
                         .scaledToFit()
                         .padding(40)
                     Text("List of Insights")
-                        .font(.title)
+                        .font(.headline)
+                        
                 }
                 .padding()
             } else {
@@ -140,7 +141,7 @@ struct CompaniesListView: View {
 //                                Text("Profile")
 //                                    .font(.caption)
 //                                Text("Summary of all Insights")
-//                                    .font(.title)
+//                                    .font(.insightValue1)
 //                                    .padding()
 //
 //                            }
@@ -152,7 +153,7 @@ struct CompaniesListView: View {
    
                     GroupBox  {
                         VStack (alignment: .leading) {
-                            Text(employee.insightname)
+                            Text(employee.insightName)
                                 .font(.headline)
                             Text("Insight                                                                                               ")
                                 .font(.caption)

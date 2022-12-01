@@ -29,11 +29,11 @@ class DataStore: ObservableObject {
             var newFamilyMember = Member(id: familymember.id, name: familymember.name)
             for insight in familymember.insights {
                 let newInsight = Insight(id: insight.id,
-                                           insightname: insight.insightname,
+                                           insightName: insight.insightName,
                                            insightCode: insight.insightCode,
-                                           department: insight.department,
-                                           slogan: insight.slogan,
-                                           title: insight.title,
+                                           insightLowRange: insight.insightLowRange,
+                                           insightHighRange: insight.insightHighRange,
+                                           insightValue1: insight.insightValue1,
                                            company: newFamilyMember)
                 Insights.append(newInsight)
                 newFamilyMember.insights.append(newInsight)

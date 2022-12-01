@@ -5,35 +5,35 @@
     "insights": [
       {
         "id": "92c08f4a-d5bf-49e4-809f-7aefaa155c16",
-        "insightname": "Vital Signs",
+        "insightName": "Vital Signs",
         "insightCode": "Mather",
-        "title": "VP Marketing",
-        "department": "Sales",
-        "slogan": "optimize granular convergence"
+        "insightValue1": "VP Marketing",
+        "insightLowRange": "Sales",
+        "insightHighRange": "optimize granular convergence"
       },
       {
         "id": "80bee40f-0ff7-4c56-a70d-002fa36726ae",
-        "insightname": "Blood Tests",
+        "insightName": "Blood Tests",
         "insightCode": "Mather",
-        "title": "Geologist I",
-        "department": "Business Development",
-        "slogan": "enable sticky infomediaries"
+        "insightValue1": "Geologist I",
+        "insightLowRange": "Business Development",
+        "insightHighRange": "enable sticky infomediaries"
       },
       {
         "id": "faadb1fe-8994-4b92-88e8-2ecb68c223f3",
-        "insightname": "Metabolic Syndrome",
+        "insightName": "Metabolic Syndrome",
         "insightCode": "Mather",
-        "title": "VP Marketing",
-        "department": "Sales",
-        "slogan": "iterate transparent niches"
+        "insightValue1": "VP Marketing",
+        "insightLowRange": "Sales",
+        "insightHighRange": "iterate transparent niches"
       },
       {
         "id": "48334608-ecc0-43c7-a5de-ab13e440d8c0",
-        "insightname": "Past Procedures",
+        "insightName": "Past Procedures",
         "insightCode": "Mather",
-        "title": "Marketing Assistant",
-        "department": "Product Management",
-        "slogan": "empower sticky e-commerce"
+        "insightValue1": "Marketing Assistant",
+        "insightLowRange": "Product Management",
+        "insightHighRange": "empower sticky e-commerce"
       }
     ]
   },
@@ -43,51 +43,51 @@
     "insights": [
       {
         "id": "5c0b2a91-501e-417d-94c1-90cf80077b74",
-        "insightname": "Annmaria",
+        "insightName": "Annmaria",
         "insightCode": "Coppo",
-        "title": "Senior Editor",
-        "department": "Sales",
-        "slogan": "visualize wireless portals"
+        "insightValue1": "Senior Editor",
+        "insightLowRange": "Sales",
+        "insightHighRange": "visualize wireless portals"
       },
       {
         "id": "794b40d2-80c4-4d19-ae63-050b5751b64b",
-        "insightname": "Noami",
+        "insightName": "Noami",
         "insightCode": "Hesser",
-        "title": "Staff Scientist",
-        "department": "Engineering",
-        "slogan": "leverage proactive initiatives"
+        "insightValue1": "Staff Scientist",
+        "insightLowRange": "Engineering",
+        "insightHighRange": "leverage proactive initiatives"
       },
       {
         "id": "072403d0-3c6c-4f90-b65e-e1ac8000a4a1",
-        "insightname": "Amory",
+        "insightName": "Amory",
         "insightCode": "Veasey",
-        "title": "Office Assistant IV",
-        "department": "Sales",
-        "slogan": "cultivate collaborative convergence"
+        "insightValue1": "Office Assistant IV",
+        "insightLowRange": "Sales",
+        "insightHighRange": "cultivate collaborative convergence"
       },
       {
         "id": "13a948de-e4b9-4bc1-a978-b2ffff14a12b",
-        "insightname": "Huntington",
+        "insightName": "Huntington",
         "insightCode": "Croome",
-        "title": "Web Developer II",
-        "department": "Support",
-        "slogan": "engineer leading-edge interfaces"
+        "insightValue1": "Web Developer II",
+        "insightLowRange": "Support",
+        "insightHighRange": "engineer leading-edge interfaces"
       },
       {
         "id": "9f1db8cb-b491-43cf-9b46-d64dc1e097fd",
-        "insightname": "Wendi",
+        "insightName": "Wendi",
         "insightCode": "Yurov",
-        "title": "Engineer IV",
-        "department": "Business Development",
-        "slogan": "seize extensible synergies"
+        "insightValue1": "Engineer IV",
+        "insightLowRange": "Business Development",
+        "insightHighRange": "seize extensible synergies"
       },
       {
         "id": "b4ac68ea-3245-41b1-88ac-00091a68dbd9",
-        "insightname": "Pren",
+        "insightName": "Pren",
         "insightCode": "Greville",
-        "title": "Web Designer II",
-        "department": "Support",
-        "slogan": "synergize mission-critical action-items"
+        "insightValue1": "Web Designer II",
+        "insightLowRange": "Support",
+        "insightHighRange": "synergize mission-critical action-items"
       }
     ]
   },
@@ -97,59 +97,59 @@
     "insights": [
       {
         "id": "92532133-c479-4547-9c11-62693a109776",
-        "insightname": "Brena",
+        "insightName": "Brena",
         "insightCode": "Bernardini",
-        "title": "Account Coordinator",
-        "department": "Research and Development",
-        "slogan": "synthesize innovative infomediaries"
+        "insightValue1": "Account Coordinator",
+        "insightLowRange": "Research and Development",
+        "insightHighRange": "synthesize innovative infomediaries"
       },
       {
         "id": "b4b81220-55fe-444d-a6a3-cc9c1810f07d",
-        "insightname": "Kevyn",
+        "insightName": "Kevyn",
         "insightCode": "Arghent",
-        "title": "Geological Engineer",
-        "department": "Legal",
-        "slogan": "deliver synergistic paradigms"
+        "insightValue1": "Geological Engineer",
+        "insightLowRange": "Legal",
+        "insightHighRange": "deliver synergistic paradigms"
       },
       {
         "id": "a0069bdc-d85b-45fc-bfe8-218ded20b47f",
-        "insightname": "Christye",
+        "insightName": "Christye",
         "insightCode": "Yitzowitz",
-        "title": "Teacher",
-        "department": "Marketing",
-        "slogan": "disintermediate viral e-commerce"
+        "insightValue1": "Teacher",
+        "insightLowRange": "Marketing",
+        "insightHighRange": "disintermediate viral e-commerce"
       },
       {
         "id": "7b334655-be69-4044-b1c8-649d6f8c1ca7",
-        "insightname": "Janela",
+        "insightName": "Janela",
         "insightCode": "Arderne",
-        "title": "Payment Adjustment Coordinator",
-        "department": "Training",
-        "slogan": "enhance magnetic users"
+        "insightValue1": "Payment Adjustment Coordinator",
+        "insightLowRange": "Training",
+        "insightHighRange": "enhance magnetic users"
       },
       {
         "id": "11581a03-7ae1-4ff3-b710-1d3031fce3e9",
-        "insightname": "Base",
+        "insightName": "Base",
         "insightCode": "Boyett",
-        "title": "Web Developer I",
-        "department": "Services",
-        "slogan": "disintermediate dot-com initiatives"
+        "insightValue1": "Web Developer I",
+        "insightLowRange": "Services",
+        "insightHighRange": "disintermediate dot-com initiatives"
       },
       {
         "id": "c127b042-b549-4c95-a3e4-a77d92829e02",
-        "insightname": "Berthe",
+        "insightName": "Berthe",
         "insightCode": "De Benedictis",
-        "title": "Financial Analyst",
-        "department": "Support",
-        "slogan": "extend distributed paradigms"
+        "insightValue1": "Financial Analyst",
+        "insightLowRange": "Support",
+        "insightHighRange": "extend distributed paradigms"
       },
       {
         "id": "503105e0-9354-4f22-9c8f-cc27aa5d5f34",
-        "insightname": "Stacee",
+        "insightName": "Stacee",
         "insightCode": "Deeman",
-        "title": "Software Test Engineer III",
-        "department": "Research and Development",
-        "slogan": "synergize leading-edge e-commerce"
+        "insightValue1": "Software Test Engineer III",
+        "insightLowRange": "Research and Development",
+        "insightHighRange": "synergize leading-edge e-commerce"
       }
     ]
   },
@@ -159,27 +159,27 @@
     "insights": [
       {
         "id": "fd43e3c0-d0a3-43ba-a839-d965d7b59fa4",
-        "insightname": "Allyn",
+        "insightName": "Allyn",
         "insightCode": "Wegenen",
-        "title": "Mechanical Systems Engineer",
-        "department": "Training",
-        "slogan": "exploit virtual niches"
+        "insightValue1": "Mechanical Systems Engineer",
+        "insightLowRange": "Training",
+        "insightHighRange": "exploit virtual niches"
       },
       {
         "id": "bbe983e3-a692-43e1-9ded-975fea60b38e",
-        "insightname": "Benedikta",
+        "insightName": "Benedikta",
         "insightCode": "Werndley",
-        "title": "VP Accounting",
-        "department": "Accounting",
-        "slogan": "synthesize cutting-edge schemas"
+        "insightValue1": "VP Accounting",
+        "insightLowRange": "Accounting",
+        "insightHighRange": "synthesize cutting-edge schemas"
       },
       {
         "id": "ea4b240f-d586-4a29-9bc8-1c23fa1239da",
-        "insightname": "Judie",
+        "insightName": "Judie",
         "insightCode": "Giff",
-        "title": "Staff Accountant II",
-        "department": "Services",
-        "slogan": "unleash proactive partnerships"
+        "insightValue1": "Staff Accountant II",
+        "insightLowRange": "Services",
+        "insightHighRange": "unleash proactive partnerships"
       }
     ]
   },
@@ -189,43 +189,43 @@
     "insights": [
       {
         "id": "141226da-18f7-451e-908e-1ea4661a0c40",
-        "insightname": "Malachi",
+        "insightName": "Malachi",
         "insightCode": "Lindermann",
-        "title": "Structural Engineer",
-        "department": "Support",
-        "slogan": "e-enable visionary networks"
+        "insightValue1": "Structural Engineer",
+        "insightLowRange": "Support",
+        "insightHighRange": "e-enable visionary networks"
       },
       {
         "id": "69659125-7ae4-4d4a-ab97-bb0e4e95bfbe",
-        "insightname": "Jolynn",
+        "insightName": "Jolynn",
         "insightCode": "Rosbotham",
-        "title": "VP Product Management",
-        "department": "Accounting",
-        "slogan": "architect user-centric synergies"
+        "insightValue1": "VP Product Management",
+        "insightLowRange": "Accounting",
+        "insightHighRange": "architect user-centric synergies"
       },
       {
         "id": "f9d86fa0-50ba-4e5d-85e2-2a98be4107ce",
-        "insightname": "Maryjo",
+        "insightName": "Maryjo",
         "insightCode": "Motion",
-        "title": "Account Representative III",
-        "department": "Support",
-        "slogan": "architect robust metrics"
+        "insightValue1": "Account Representative III",
+        "insightLowRange": "Support",
+        "insightHighRange": "architect robust metrics"
       },
       {
         "id": "ca733187-c03e-42e7-ae92-2949dea11857",
-        "insightname": "Alley",
+        "insightName": "Alley",
         "insightCode": "Oulett",
-        "title": "Accounting Assistant III",
-        "department": "Product Management",
-        "slogan": "engage strategic initiatives"
+        "insightValue1": "Accounting Assistant III",
+        "insightLowRange": "Product Management",
+        "insightHighRange": "engage strategic initiatives"
       },
       {
         "id": "960bacc1-10bf-4306-9eda-937a37e4d4e0",
-        "insightname": "Pearline",
+        "insightName": "Pearline",
         "insightCode": "Inns",
-        "title": "Database Administrator IV",
-        "department": "Product Management",
-        "slogan": "leverage magnetic e-services"
+        "insightValue1": "Database Administrator IV",
+        "insightLowRange": "Product Management",
+        "insightHighRange": "leverage magnetic e-services"
       }
     ]
   },
@@ -235,51 +235,51 @@
     "insights": [
       {
         "id": "517dbf8a-5579-4b48-b25b-bba7123d1d44",
-        "insightname": "Mab",
+        "insightName": "Mab",
         "insightCode": "Fabry",
-        "title": "Software Consultant",
-        "department": "Human Resources",
-        "slogan": "utilize synergistic interfaces"
+        "insightValue1": "Software Consultant",
+        "insightLowRange": "Human Resources",
+        "insightHighRange": "utilize synergistic interfaces"
       },
       {
         "id": "2bb55e1e-744f-48df-8c29-92ced7f90f9c",
-        "insightname": "Kathye",
+        "insightName": "Kathye",
         "insightCode": "Bellsham",
-        "title": "GIS Technical Architect",
-        "department": "Legal",
-        "slogan": "redefine leading-edge mindshare"
+        "insightValue1": "GIS Technical Architect",
+        "insightLowRange": "Legal",
+        "insightHighRange": "redefine leading-edge mindshare"
       },
       {
         "id": "8853eb4f-17d4-4e40-8ca6-e3878f5e2a5d",
-        "insightname": "Arielle",
+        "insightName": "Arielle",
         "insightCode": "Northleigh",
-        "title": "GIS Technical Architect",
-        "department": "Legal",
-        "slogan": "harness out-of-the-box partnerships"
+        "insightValue1": "GIS Technical Architect",
+        "insightLowRange": "Legal",
+        "insightHighRange": "harness out-of-the-box partnerships"
       },
       {
         "id": "5c2a4809-01e9-4099-91c1-7ccbbb1f2e0d",
-        "insightname": "Shaylynn",
+        "insightName": "Shaylynn",
         "insightCode": "Lawrenz",
-        "title": "Software Test Engineer IV",
-        "department": "Engineering",
-        "slogan": "engineer robust paradigms"
+        "insightValue1": "Software Test Engineer IV",
+        "insightLowRange": "Engineering",
+        "insightHighRange": "engineer robust paradigms"
       },
       {
         "id": "38dffdd9-68e9-4c6e-b859-ae3e6edab0f6",
-        "insightname": "Rogers",
+        "insightName": "Rogers",
         "insightCode": "Lunck",
-        "title": "Sales Associate",
-        "department": "Engineering",
-        "slogan": "deliver next-generation relationships"
+        "insightValue1": "Sales Associate",
+        "insightLowRange": "Engineering",
+        "insightHighRange": "deliver next-generation relationships"
       },
       {
         "id": "68c66e6b-a980-4462-bd8c-115ccae47aa4",
-        "insightname": "Willi",
+        "insightName": "Willi",
         "insightCode": "Chippindale",
-        "title": "Financial Analyst",
-        "department": "Legal",
-        "slogan": "incubate back-end action-items"
+        "insightValue1": "Financial Analyst",
+        "insightLowRange": "Legal",
+        "insightHighRange": "incubate back-end action-items"
       }
     ]
   },
@@ -289,35 +289,35 @@
     "insights": [
       {
         "id": "51551e23-8b57-486c-bbbe-158ba074ae70",
-        "insightname": "Julianna",
+        "insightName": "Julianna",
         "insightCode": "Carlaw",
-        "title": "Computer Systems Analyst II",
-        "department": "Human Resources",
-        "slogan": "seize customized users"
+        "insightValue1": "Computer Systems Analyst II",
+        "insightLowRange": "Human Resources",
+        "insightHighRange": "seize customized users"
       },
       {
         "id": "11183f81-f7a8-4128-8765-171e64a0b2ce",
-        "insightname": "Norina",
+        "insightName": "Norina",
         "insightCode": "Bovingdon",
-        "title": "Staff Accountant II",
-        "department": "Research and Development",
-        "slogan": "deliver end-to-end architectures"
+        "insightValue1": "Staff Accountant II",
+        "insightLowRange": "Research and Development",
+        "insightHighRange": "deliver end-to-end architectures"
       },
       {
         "id": "062243b5-dcf9-4754-8220-fc64188b1b04",
-        "insightname": "Corabelle",
+        "insightName": "Corabelle",
         "insightCode": "Balentyne",
-        "title": "Civil Engineer",
-        "department": "Accounting",
-        "slogan": "expedite holistic users"
+        "insightValue1": "Civil Engineer",
+        "insightLowRange": "Accounting",
+        "insightHighRange": "expedite holistic users"
       },
       {
         "id": "1a221dd7-ad08-4d23-a1f7-31c8c56c03b1",
-        "insightname": "Collin",
+        "insightName": "Collin",
         "insightCode": "Steinham",
-        "title": "Senior Sales Associate",
-        "department": "Training",
-        "slogan": "transform enterprise methodologies"
+        "insightValue1": "Senior Sales Associate",
+        "insightLowRange": "Training",
+        "insightHighRange": "transform enterprise methodologies"
       }
     ]
   },
@@ -327,59 +327,59 @@
     "insights": [
       {
         "id": "d1cd435c-27d8-4c56-8ca0-0d85671c5a40",
-        "insightname": "Profile",
+        "insightName": "Profile",
         "insightCode": "January 21, 2022",
-        "title": "VP Sales",
-        "department": "Business Development",
-        "slogan": "utilize sexy paradigms"
+        "insightValue1": "VP Sales",
+        "insightLowRange": "Business Development",
+        "insightHighRange": "utilize sexy paradigms"
       },
       {
         "id": "1907fee1-e712-4964-a198-cfe951703bb3",
-        "insightname": "Messages",
+        "insightName": "Messages",
         "insightCode": "and Alerts",
-        "title": "Quality Engineer",
-        "department": "Sales",
-        "slogan": "iterate cutting-edge mindshare"
+        "insightValue1": "Quality Engineer",
+        "insightLowRange": "Sales",
+        "insightHighRange": "iterate cutting-edge mindshare"
       },
       {
         "id": "812fa0ea-71e5-45f8-a70b-977cc1a8bc51",
-        "insightname": "Timeline",
+        "insightName": "Timeline",
         "insightCode": "",
-        "title": "Pharmacist",
-        "department": "Engineering",
-        "slogan": "enhance frictionless e-commerce"
+        "insightValue1": "Pharmacist",
+        "insightLowRange": "Engineering",
+        "insightHighRange": "enhance frictionless e-commerce"
       },
       {
         "id": "620f40a1-9013-46ae-9050-a230531eef9a",
-        "insightname": "Home",
+        "insightName": "Home",
         "insightCode": "Medical Kit",
-        "title": "Editor",
-        "department": "Research and Development",
-        "slogan": "synthesize plug-and-play portals"
+        "insightValue1": "Editor",
+        "insightLowRange": "Research and Development",
+        "insightHighRange": "synthesize plug-and-play portals"
       },
       {
         "id": "4f6f2316-ef89-4034-b749-36b267f6e481",
-        "insightname": "Rodd",
+        "insightName": "Rodd",
         "insightCode": "Raffon",
-        "title": "Structural Engineer",
-        "department": "Human Resources",
-        "slogan": "leverage collaborative e-tailers"
+        "insightValue1": "Structural Engineer",
+        "insightLowRange": "Human Resources",
+        "insightHighRange": "leverage collaborative e-tailers"
       },
       {
         "id": "6ad71132-d890-402b-b883-07ce6a337421",
-        "insightname": "Ortensia",
+        "insightName": "Ortensia",
         "insightCode": "Fulker",
-        "title": "Engineer I",
-        "department": "Business Development",
-        "slogan": "repurpose sexy infrastructures"
+        "insightValue1": "Engineer I",
+        "insightLowRange": "Business Development",
+        "insightHighRange": "repurpose sexy infrastructures"
       },
       {
         "id": "0ae03c91-ea8e-4ba0-8d41-9d26754c7e01",
-        "insightname": "Gaspard",
+        "insightName": "Gaspard",
         "insightCode": "Tilson",
-        "title": "Computer Systems Analyst I",
-        "department": "Legal",
-        "slogan": "harness back-end eyeballs"
+        "insightValue1": "Computer Systems Analyst I",
+        "insightLowRange": "Legal",
+        "insightHighRange": "harness back-end eyeballs"
       }
     ]
   },
@@ -389,51 +389,51 @@
     "insights": [
       {
         "id": "14993cee-ffbf-4909-802c-ae79ab2b3d39",
-        "insightname": "Elsy",
+        "insightName": "Elsy",
         "insightCode": "Voas",
-        "title": "Senior Financial Analyst",
-        "department": "Accounting",
-        "slogan": "incentivize granular convergence"
+        "insightValue1": "Senior Financial Analyst",
+        "insightLowRange": "Accounting",
+        "insightHighRange": "incentivize granular convergence"
       },
       {
         "id": "8e4215d9-eb06-4cbc-b662-5ec888d48e32",
-        "insightname": "Erin",
+        "insightName": "Erin",
         "insightCode": "Duiged",
-        "title": "Pharmacist",
-        "department": "Product Management",
-        "slogan": "seize B2C systems"
+        "insightValue1": "Pharmacist",
+        "insightLowRange": "Product Management",
+        "insightHighRange": "seize B2C systems"
       },
       {
         "id": "e83a6e77-2484-4202-b327-a3d7e8c4bf9e",
-        "insightname": "Linc",
+        "insightName": "Linc",
         "insightCode": "Pegrum",
-        "title": "Biostatistician I",
-        "department": "Services",
-        "slogan": "utilize user-centric solutions"
+        "insightValue1": "Biostatistician I",
+        "insightLowRange": "Services",
+        "insightHighRange": "utilize user-centric solutions"
       },
       {
         "id": "eee5641e-bad9-47e3-8d5f-77a5ff6f8d4e",
-        "insightname": "Eunice",
+        "insightName": "Eunice",
         "insightCode": "Yedy",
-        "title": "Librarian",
-        "department": "Business Development",
-        "slogan": "productize compelling networks"
+        "insightValue1": "Librarian",
+        "insightLowRange": "Business Development",
+        "insightHighRange": "productize compelling networks"
       },
       {
         "id": "424bb0ad-b197-4408-bb23-43bfcade6491",
-        "insightname": "Devin",
+        "insightName": "Devin",
         "insightCode": "Ivakhno",
-        "title": "Engineer IV",
-        "department": "Support",
-        "slogan": "redefine innovative methodologies"
+        "insightValue1": "Engineer IV",
+        "insightLowRange": "Support",
+        "insightHighRange": "redefine innovative methodologies"
       },
       {
         "id": "a1350299-ad1b-436e-bb38-73bc71e493dd",
-        "insightname": "Omero",
+        "insightName": "Omero",
         "insightCode": "Valadez",
-        "title": "Speech Pathologist",
-        "department": "Marketing",
-        "slogan": "iterate cutting-edge channels"
+        "insightValue1": "Speech Pathologist",
+        "insightLowRange": "Marketing",
+        "insightHighRange": "iterate cutting-edge channels"
       }
     ]
   },
@@ -443,43 +443,43 @@
     "insights": [
       {
         "id": "a9eae469-8bb6-4658-a895-651cf711584a",
-        "insightname": "Dimitri",
+        "insightName": "Dimitri",
         "insightCode": "Manjot",
-        "title": "Systems Administrator II",
-        "department": "Business Development",
-        "slogan": "cultivate cross-platform experiences"
+        "insightValue1": "Systems Administrator II",
+        "insightLowRange": "Business Development",
+        "insightHighRange": "cultivate cross-platform experiences"
       },
       {
         "id": "fc88036a-695a-42c2-b668-804a4345f67d",
-        "insightname": "Sabrina",
+        "insightName": "Sabrina",
         "insightCode": "McLelland",
-        "title": "Paralegal",
-        "department": "Support",
-        "slogan": "aggregate integrated web-readiness"
+        "insightValue1": "Paralegal",
+        "insightLowRange": "Support",
+        "insightHighRange": "aggregate integrated web-readiness"
       },
       {
         "id": "a72c7e64-27e2-4c7b-b17a-0772d01c6598",
-        "insightname": "Colleen",
+        "insightName": "Colleen",
         "insightCode": "Arnett",
-        "title": "Associate Professor",
-        "department": "Training",
-        "slogan": "reinvent collaborative e-markets"
+        "insightValue1": "Associate Professor",
+        "insightLowRange": "Training",
+        "insightHighRange": "reinvent collaborative e-markets"
       },
       {
         "id": "03ebf94e-ad76-4a4a-baa7-033a83a116b9",
-        "insightname": "Washington",
+        "insightName": "Washington",
         "insightCode": "Drakard",
-        "title": "Chief Design Engineer",
-        "department": "Sales",
-        "slogan": "enhance B2B communities"
+        "insightValue1": "Chief Design Engineer",
+        "insightLowRange": "Sales",
+        "insightHighRange": "enhance B2B communities"
       },
       {
         "id": "f18df83c-b8d8-4130-bd6d-bc13a68d21c3",
-        "insightname": "Murvyn",
+        "insightName": "Murvyn",
         "insightCode": "Renshall",
-        "title": "Payment Adjustment Coordinator",
-        "department": "Accounting",
-        "slogan": "unleash visionary initiatives"
+        "insightValue1": "Payment Adjustment Coordinator",
+        "insightLowRange": "Accounting",
+        "insightHighRange": "unleash visionary initiatives"
       }
     ]
   }

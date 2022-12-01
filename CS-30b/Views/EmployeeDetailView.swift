@@ -34,16 +34,16 @@ struct EmployeeDetailView: View {
 //                    }
                     
                     
-                        .navigationTitle(employee.insightname)
+                        .navigationTitle(employee.insightName)
 
                     .toolbarBackground(.orange.gradient, for: .navigationBar)
                     .toolbarBackground(.visible, for: .navigationBar)
                     .toolbarColorScheme(.dark, for: .navigationBar)
                     
                     Spacer()
-                    Text("Insight Details:   " + employee.insightname)
-                        .font(.title)
-                    Text("\"" + employee.slogan + "\"")
+                    Text("Insight Details:   " + employee.insightName)
+                        .font(.headline)
+                    Text("\"" + employee.insightHighRange + "\"")
                         .font(.largeTitle)
                         .fontWeight(.thin)
                         .italic()
@@ -52,12 +52,12 @@ struct EmployeeDetailView: View {
                         GridRow(alignment: .top) {
                             Text("Department:").bold()
                                 .gridColumnAlignment(.trailing)
-                            Text(employee.department)
+                            Text(employee.insightLowRange)
                                 .gridColumnAlignment(.leading)
                         }
                         GridRow(alignment: .top) {
                             Text("Title:").bold()
-                            Text(employee.title)
+                            Text(employee.insightValue1)
                         }
                     }
                     .padding()
@@ -74,7 +74,7 @@ struct EmployeeDetailView: View {
                     .scaledToFit()
                     .frame(width: 300)
                 Text("Insight details display here...")
-                    .font(.title)
+                    .font(.headline)
                 
             }
         }
