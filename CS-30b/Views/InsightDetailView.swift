@@ -11,10 +11,10 @@ import SwiftUI
 
 struct InsightDetailView: View {
     @EnvironmentObject var store: DataStore
-    var employeeId: Insight.ID?
+    var insightId: Insight.ID?
     var body: some View {
-        if let employeeId {
-            if let employee = store.employee(id: employeeId) {
+        if let insightId {
+            if let employee = store.employee(id: insightId) {
                 VStack {
                  Text ("")
 //                    GroupBox {
@@ -22,7 +22,7 @@ struct InsightDetailView: View {
 //                            Image(systemName: "waveform.path.ecg.rectangle")
 //                                .font(.largeTitle)
 //                            VStack (alignment: .leading) {
-//                                Text(employee.company.name)
+//                                Text(employee.familymember.name)
 //                                    .font(.headline)
 //                                    .fontWeight(.bold)
 //                                Text("As of:  December 1, 2022")
@@ -85,7 +85,7 @@ struct InsightDetailView: View {
 
 struct InsightDetailView_Previews: PreviewProvider {
     static var previews: some View {
-        InsightDetailView(employeeId: "92c08f4a-d5bf-49e4-809f-7aefaa155c16")
+        InsightDetailView(insightId: "92c08f4a-d5bf-49e4-809f-7aefaa155c16")
             .environmentObject(DataStore())
     }
 }

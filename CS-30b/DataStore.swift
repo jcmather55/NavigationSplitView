@@ -34,7 +34,7 @@ class DataStore: ObservableObject {
                                            insightLowRange: insight.insightLowRange,
                                            insightHighRange: insight.insightHighRange,
                                            insightValue1: insight.insightValue1,
-                                           company: newFamilyMember)
+                                           familymember: newFamilyMember)
                 Insights.append(newInsight)
                 newFamilyMember.insights.append(newInsight)
             }
@@ -50,7 +50,7 @@ class DataStore: ObservableObject {
         Insights.first(where: {$0.id == id})
     }
     
-    func company(id: String) -> Member? {
+    func familymember(id: String) -> Member? {
         FamilyMembers.first(where: {$0.id == id})
     }
 }

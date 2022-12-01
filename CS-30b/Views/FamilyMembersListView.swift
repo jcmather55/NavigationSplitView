@@ -11,8 +11,8 @@ import SwiftUI
 
 struct FamilyMembersListView: View {
     @EnvironmentObject var store: DataStore
-    @State private var companyId: Member.ID?
-    @State private var employeeId: Insight.ID?
+    @State private var familyMemberId: Member.ID?
+    @State private var insightId: Insight.ID?
     @State private var columnVisibility:
     
     NavigationSplitViewVisibility = .all
@@ -35,16 +35,16 @@ struct FamilyMembersListView: View {
                     .italic()
             }
             
-            // NSV Part 1 - "Company/Patient List"
+            // NSV Part 1 - list family members
             
-            List(store.FamilyMembers, selection: $companyId) { company in
+            List(store.FamilyMembers, selection: $familyMemberId) { familymember in
             
                 HStack (alignment: .top) {
                     Image(systemName: "person.crop.circle")
                         .font(.largeTitle)
                     
                     VStack (alignment: .leading) {
-                        Text(company.name)
+                        Text(familymember.name)
                             .font(.headline)
                             .fontWeight(.bold)
                         
@@ -112,9 +112,9 @@ struct FamilyMembersListView: View {
 // MARK: - CONTENT SECTION OF NAVIGATION SPLIT VIEW
     
     content: {
-            if companyId == nil {
+            if familyMemberId == nil {
                 VStack {
-                    Image("company")
+                    Image("familymember")
                         .resizable()
                         .scaledToFit()
                         .padding(40)
@@ -124,7 +124,7 @@ struct FamilyMembersListView: View {
                 }
                 .padding()
             } else {
-                if let company = store.company(id: companyId!) {
+                if let familymember = store.familymember(id: familyMemberId!) {
      
   
             // This is the Patient Title Block for top of Insignts List View
@@ -134,7 +134,7 @@ struct FamilyMembersListView: View {
 //                            Image(systemName: "person.crop.circle")
 //                                .font(.largeTitle)
 //                            VStack (alignment: .leading) {
-//                               Text(company.name)
+//                               Text(familymember.name)
 //                                    .font(.headline)
 //                                    .fontWeight(.bold)
 //
@@ -149,7 +149,7 @@ struct FamilyMembersListView: View {
 //                        }
 //
 //                    }
-                    List(company.insights, selection: $employeeId) { employee in
+                    List(familymember.insights, selection: $insightId) { employee in
    
                     GroupBox  {
                         VStack (alignment: .leading) {
@@ -195,7 +195,7 @@ struct FamilyMembersListView: View {
                     .font(.caption)
                     
                     
-                    .navigationTitle(company.name)
+                    .navigationTitle(familymember.name)
                     .toolbarBackground(.teal.gradient, for: .navigationBar)
                     .toolbarBackground(.visible, for: .navigationBar)
                     .toolbarColorScheme(.dark, for: .navigationBar)
@@ -206,17 +206,17 @@ struct FamilyMembersListView: View {
     
 // MARK: - DETAIL SECTION OF NAVIGATION SPLIT VIEW
     detail: {
-        InsightDetailView(employeeId: employeeId)
+        InsightDetailView(insightId: insightId)
     }
         
 
 
         .navigationSplitViewStyle(.balanced)
  
-    .onChange(of: companyId) { _ in employeeId = nil; columnVisibility = .doubleColumn}
+    .onChange(of: familyMemberId) { _ in insightId = nil; columnVisibility = .doubleColumn}
  
-    .onChange(of: employeeId) { _ in
-        if employeeId == nil {
+    .onChange(of: insightId) { _ in
+        if insightId == nil {
             columnVisibility = .all
         } else {
             columnVisibility = .detailOnly

@@ -17,7 +17,7 @@ struct Insight: Identifiable {
     var insightLowRange: String
     var insightHighRange: String
     var insightValue1: String
-    var company: Member
+    var familymember: Member
     
     var fullName: String {
         insightName + " " + insightCode
