@@ -149,17 +149,17 @@ struct FamilyMembersListView: View {
 //                        }
 //
 //                    }
-                    List(familymember.insights, selection: $insightId) { employee in
+                    List(familymember.insights, selection: $insightId) { insight in
    
-                    GroupBox  {
-                        VStack (alignment: .leading) {
-                            Text(employee.insightName)
-                                .font(.headline)
-                            Text("Insight                                                                                               ")
-                                .font(.caption)
+                        GroupBox  {
+                            VStack (alignment: .leading) {
+                                Text(insight.insightName)
+                                    .font(.headline)
+                                Text("Insight                                                                                               ")
+                                    .font(.caption)
+                            }
                         }
-                    }
-
+                        
                     }
                     .padding()
                     .toolbar {

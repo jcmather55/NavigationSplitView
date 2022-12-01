@@ -14,7 +14,7 @@ struct InsightDetailView: View {
     var insightId: Insight.ID?
     var body: some View {
         if let insightId {
-            if let employee = store.employee(id: insightId) {
+            if let insight = store.insight(id: insightId) {
                 VStack {
                  Text ("")
 //                    GroupBox {
@@ -22,7 +22,7 @@ struct InsightDetailView: View {
 //                            Image(systemName: "waveform.path.ecg.rectangle")
 //                                .font(.largeTitle)
 //                            VStack (alignment: .leading) {
-//                                Text(employee.familymember.name)
+//                                Text(insight.familymember.name)
 //                                    .font(.headline)
 //                                    .fontWeight(.bold)
 //                                Text("As of:  December 1, 2022")
@@ -34,16 +34,16 @@ struct InsightDetailView: View {
 //                    }
                     
                     
-                        .navigationTitle(employee.insightName)
+                        .navigationTitle(insight.insightName)
 
                     .toolbarBackground(.orange.gradient, for: .navigationBar)
                     .toolbarBackground(.visible, for: .navigationBar)
                     .toolbarColorScheme(.dark, for: .navigationBar)
                     
                     Spacer()
-                    Text("Insight Details:   " + employee.insightName)
+                    Text("Insight Details:   " + insight.insightName)
                         .font(.headline)
-                    Text("\"" + employee.insightHighRange + "\"")
+                    Text("\"" + insight.insightHighRange + "\"")
                         .font(.largeTitle)
                         .fontWeight(.thin)
                         .italic()
@@ -52,12 +52,12 @@ struct InsightDetailView: View {
                         GridRow(alignment: .top) {
                             Text("Department:").bold()
                                 .gridColumnAlignment(.trailing)
-                            Text(employee.insightLowRange)
+                            Text(insight.insightLowRange)
                                 .gridColumnAlignment(.leading)
                         }
                         GridRow(alignment: .top) {
                             Text("Title:").bold()
-                            Text(employee.insightValue1)
+                            Text(insight.insightValue1)
                         }
                     }
                     .padding()
@@ -69,7 +69,7 @@ struct InsightDetailView: View {
             }
         } else {
             VStack {
-                Image("employee")
+                Image("insight")
                     .resizable()
                     .scaledToFit()
                     .frame(width: 300)

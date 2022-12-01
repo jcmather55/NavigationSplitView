@@ -46,7 +46,7 @@ class DataStore: ObservableObject {
         Insights = Insights.sorted(using: KeyPathComparator(\.insightCode))
     }
     
-    func employee(id: String) -> Insight? {
+    func insight(id: String) -> Insight? {
         Insights.first(where: {$0.id == id})
     }
     
