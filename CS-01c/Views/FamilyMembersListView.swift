@@ -32,6 +32,7 @@ struct FamilyMembersListView: View {
                 Text("\(appName)  \(appVersion)")
                     .font(.caption2)
                     .fontWeight(.light)
+                    .multilineTextAlignment(.leading)
                     .italic()
             }
             
@@ -105,7 +106,7 @@ struct FamilyMembersListView: View {
 
             
     .navigationTitle("My Family")
-    .toolbarBackground(.blue.gradient, for: .navigationBar)
+    .toolbarBackground(.blue.gradient, for: .automatic)
     .toolbarBackground(.visible, for: .navigationBar)
     .toolbarColorScheme(.dark, for: .navigationBar)
 
