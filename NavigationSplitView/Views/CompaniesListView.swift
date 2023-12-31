@@ -44,10 +44,10 @@ struct CompaniesListView: View {
             EmployeeView(employeeId: employeeId)
         }
         .navigationSplitViewStyle(.balanced)
-        .onChange(of: companyId) { _ in
+        .onChange(of: companyId) {
             employeeId = nil
         }
-        .onChange(of: employeeId) { _ in
+        .onChange(of: employeeId) {
             if employeeId == nil {
                 columnVisibility = .all
             } else {
